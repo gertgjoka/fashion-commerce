@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="" roles="*">
+    <siteMapNode url="~/Default.aspx" title="Home"  description="Homepage" roles="*">
+      <siteMapNode url="~/About.aspx" title="About"  description="About FashionZone" roles="*"/>
+    </siteMapNode>
+    <siteMapNode url="~/Secure/Admin/UserView.aspx" title="Users"  description="User management" roles="Administrator">
+      <siteMapNode url="~/Secure/Admin/UserNew.aspx" title="New user"  description="New user" roles="Administrator"/>
+      <siteMapNode url="~/Secure/Admin/Roles.aspx" title="Roles"  description="Roles" roles="Administrator"/>
+      <siteMapNode url="~/Secure/Admin/AuditTrail.aspx" title="Audit trail"  description="Audit trail" roles="Administrator"/>
+    </siteMapNode>
+    <siteMapNode url="~/Secure/Order/OrderView.aspx" title="Orders"  description="Order management" roles="Moderator, Administrator">
+      <siteMapNode url="~/Secure/Order/OrderNew.aspx" title="New order"  description="New order" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Order/CartView.aspx" title="Shopping carts"  description="Shopping Carts" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Order/ShipmentView.aspx" title="Shipments"  description="Shipments" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Order/InvoiceView.aspx" title="Invoices"  description="Invoices" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Order/ReturnView.aspx" title="Returns"  description="Returns" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Order/ReturnNew.aspx" title="New Return"  description="Returns" roles="Moderator, Administrator"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/Secure/Product/BrandNew.aspx" title="New brand"  description="New brand" roles="Moderator, Administrator">
+      <siteMapNode url="~/Secure/Product/CampaignNew.aspx" title="New campaign"  description="New campaign" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/Attributes.aspx" title="Attributes"  description="Attributes" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/Categories.aspx" title="Categories"  description="Categories" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/ProductImporter.aspx" title="Import"  description="Product Importer" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/ProductNew.aspx" title="New product"  description="New product" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/ProductView.aspx" title="Products"  description="Products" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/BrandView.aspx" title="Brands"  description="Brands" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Product/CampaignView.aspx" title="Campaigns"  description="Campaigns" roles="Moderator, Administrator"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/Secure/Customer/CustomerView.aspx" title="Customers"  description="Customer" roles="Moderator, Administrator">
+      <siteMapNode url="~/Secure/Customer/CustomerNew.aspx" title="New customer"  description="New customer" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Customer/InvitationView.aspx" title="Invitations"  description="Invitations" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Customer/InvitationNew.aspx" title="New Invitations"  description="Invitations" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Customer/BonusView.aspx" title="Bonuses"  description="Bonuses" roles="Moderator, Administrator"/>
+      <siteMapNode url="~/Secure/Customer/BonusNew.aspx" title="New bonuses"  description="New bonuses" roles="Moderator, Administrator"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

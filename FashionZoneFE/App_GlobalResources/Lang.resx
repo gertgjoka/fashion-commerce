@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsLabel" xml:space="preserve">
+    <value>Rreth nesh</value>
+  </data>
+  <data name="AccessSaleLabel" xml:space="preserve">
+    <value>Konsulto produktet e markës</value>
+  </data>
+  <data name="ActualCampaignsLabel" xml:space="preserve">
+    <value>Fushata në këtë moment</value>
+  </data>
+  <data name="AllMenuLabel" xml:space="preserve">
+    <value>Të gjitha</value>
+  </data>
+  <data name="CampaignSoonLabel" xml:space="preserve">
+    <value>Së shpejti</value>
+  </data>
+  <data name="ChildMenuLabel" xml:space="preserve">
+    <value>Fëmijë</value>
+  </data>
+  <data name="ConnectedUsersLabel" xml:space="preserve">
+    <value>përdorues në sit</value>
+  </data>
+  <data name="ContactLabel" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="DeliveryLabel" xml:space="preserve">
+    <value>Dërgimi</value>
+  </data>
+  <data name="FollowUsLabel" xml:space="preserve">
+    <value>Na ndiq</value>
+  </data>
+  <data name="FZONEALLabel" xml:space="preserve">
+    <value>FZONE.AL</value>
+  </data>
+  <data name="HelpAndContactLabel" xml:space="preserve">
+    <value>NDIHME</value>
+  </data>
+  <data name="HomeMenuLabel" xml:space="preserve">
+    <value>Kreu</value>
+  </data>
+  <data name="InviteAndWinLabel" xml:space="preserve">
+    <value>Fto miqtë e tu dhe fito 5 </value>
+  </data>
+  <data name="InviteLabel" xml:space="preserve">
+    <value>FTO</value>
+  </data>
+  <data name="LoginLabel" xml:space="preserve">
+    <value>Identifikohu</value>
+  </data>
+  <data name="ManMenuLabel" xml:space="preserve">
+    <value>Meshkuj</value>
+  </data>
+  <data name="MoreLabel" xml:space="preserve">
+    <value>ME SHUME</value>
+  </data>
+  <data name="MyAccountLabel" xml:space="preserve">
+    <value>PROFILI IM</value>
+  </data>
+  <data name="MyAddressesLabel" xml:space="preserve">
+    <value>Adresat e mia</value>
+  </data>
+  <data name="MyInfoLabel" xml:space="preserve">
+    <value>Të dhënat e mia</value>
+  </data>
+  <data name="MyInviteesLabel" xml:space="preserve">
+    <value>Të ftuarit e mi</value>
+  </data>
+  <data name="MyOrdersLabel" xml:space="preserve">
+    <value>POROSITE E MIA</value>
+  </data>
+  <data name="MyVoucherLabel" xml:space="preserve">
+    <value>Bonot e mia</value>
+  </data>
+  <data name="PaymentLabel" xml:space="preserve">
+    <value>Pagesa</value>
+  </data>
+  <data name="PaymentMethodsLabel" xml:space="preserve">
+    <value>Mënyrat e pagesës</value>
+  </data>
+  <data name="PostSellServicesLabel" xml:space="preserve">
+    <value>Shërbimet pas shitjes</value>
+  </data>
+  <data name="PrivacyStatementLabel" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="ReturnsAndRefundsLabel" xml:space="preserve">
+    <value>Kthimet dhe rimbursimet</value>
+  </data>
+  <data name="SalesReminderLabel" xml:space="preserve">
+    <value>Memo e shitjeve</value>
+  </data>
+  <data name="SecurityLabel" xml:space="preserve">
+    <value>Siguria</value>
+  </data>
+  <data name="SellingTerms" xml:space="preserve">
+    <value>Kushtet e shitjes</value>
+  </data>
+  <data name="TermsOfUseLabel" xml:space="preserve">
+    <value>Kushtet e përdorimit</value>
+  </data>
+  <data name="ThereAreNrLabel" xml:space="preserve">
+    <value>Aktualisht</value>
+  </data>
+  <data name="WomanMenuLabel" xml:space="preserve">
+    <value>Femra</value>
+  </data>
+  <data name="WorkWithUsLabel" xml:space="preserve">
+    <value>Punësime</value>
+  </data>
+  <data name="YourUniverseLabel" xml:space="preserve">
+    <value>UNIVERSI YT</value>
+  </data>
+  <data name="MyAccountLowerLabel" xml:space="preserve">
+    <value>Profili im</value>
+  </data>
+  <data name="MyOrdersLowerLabel" xml:space="preserve">
+    <value>Porositë e mia</value>
+  </data>
+  <data name="AvailableLabel" xml:space="preserve">
+    <value>I disponueshëm</value>
+  </data>
+  <data name="TerminatedLabel" xml:space="preserve">
+    <value>Mbaruar</value>
+  </data>
+  <data name="GoToProductDetailLabel" xml:space="preserve">
+    <value>Shko tek detajet</value>
+  </data>
+  <data name="AddToBasketLink" xml:space="preserve">
+    <value>Shto në shportë</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Përshkrimi</value>
+  </data>
+  <data name="EstimatedDeliveryLabel" xml:space="preserve">
+    <value>Dërgimi i parashikuar për:</value>
+  </data>
+  <data name="BirthdayLabel" xml:space="preserve">
+    <value>Datëlindja</value>
+  </data>
+  <data name="BonusLabel" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="FriendsLabel" xml:space="preserve">
+    <value>Miqtë e tu</value>
+  </data>
+  <data name="GenderLabel" xml:space="preserve">
+    <value>Gjinia</value>
+  </data>
+  <data name="MobileLabel" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Emri</value>
+  </data>
+  <data name="NotificationHeadLabel" xml:space="preserve">
+    <value>Njoftime</value>
+  </data>
+  <data name="NotifTextDailyLabel" xml:space="preserve">
+    <value>Për të aktivizuar shërbimin e njoftimeve me mail cdo ditë.</value>
+  </data>
+  <data name="NotifTextSpecialLabel" xml:space="preserve">
+    <value>Për të aktivizuar shërbimin e njoftimeve  me mail për ofertat SPECIALE</value>
+  </data>
+  <data name="NotifTextWeeklyLabel" xml:space="preserve">
+    <value>Për të aktivizuar shërbimin e njoftimeve me mail cdo javë.</value>
+  </data>
+  <data name="OrderLabel" xml:space="preserve">
+    <value>Porosi</value>
+  </data>
+  <data name="PersonalDataLabel" xml:space="preserve">
+    <value>Të dhënat personale</value>
+  </data>
+  <data name="SurnameLabel" xml:space="preserve">
+    <value>Mbiemri</value>
+  </data>
+  <data name="TelLabel" xml:space="preserve">
+    <value>Telefoni</value>
+  </data>
+  <data name="InformationsHeadLabel" xml:space="preserve">
+    <value>Informacione</value>
+  </data>
+  <data name="InformationsTextLabel" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+  <data name="MyAddresesHeadLabel" xml:space="preserve">
+    <value>Adresat</value>
+  </data>
+  <data name="PersonalDataHeadLabel" xml:space="preserve">
+    <value>Të Dhënat</value>
+  </data>
+  <data name="SecureTransactionsLabel" xml:space="preserve">
+    <value>Siguria mbi transaksionet e pagimit</value>
+  </data>
+  <data name="SecureTransactionsTextLabel" xml:space="preserve">
+    <value>Faqja fzone.al është e pajisur me një sistem mbrojtje nga më efektivët që ekzistojnë aktualisht. Faqja e internetit nuk ka miratuar vetëm procedurën e kodimit SSL (Secure Socket Layer), por në të njëjtën kohë ka përforcuar procedurat për anti-interferencat dhe kodifikimin për të ruajtur sa më tepër të jetë e mundur të dhënat e lidhura me mjetet e pagesës. Fzone.al nuk ka akses në të dhënat konfidenciale në lidhje me mjetet e pagesës. Në fakt, vetëm Paypal / Easypay ka informacion (për numrin e kartës së kreditit dhe vlefshmërinë), i cili nuk është në dispozicion të palëve të treta.</value>
+  </data>
+  <data name="CompanyLabel" xml:space="preserve">
+    <value>Kompania</value>
+  </data>
+  <data name="EditButton" xml:space="preserve">
+    <value>Modifiko</value>
+  </data>
+  <data name="StreetLabel" xml:space="preserve">
+    <value>Rruga</value>
+  </data>
+  <data name="SizeLabel" xml:space="preserve">
+    <value>Masa</value>
+  </data>
+  <data name="QuantityLabel" xml:space="preserve">
+    <value>Sasia</value>
+  </data>
+  <data name="AddAddressLabel" xml:space="preserve">
+    <value>Shto adresë</value>
+  </data>
+  <data name="DeleteLabel" xml:space="preserve">
+    <value>Elimino</value>
+  </data>
+  <data name="DeliveryAddressLabel" xml:space="preserve">
+    <value>Adresa e dërgimit</value>
+  </data>
+  <data name="OnlyLabel" xml:space="preserve">
+    <value>Vetëm</value>
+  </data>
+  <data name="ProductNotAvailableLiteral" xml:space="preserve">
+    <value>Fatkeqësisht, ky produkt nuk është më i disponueshëm.</value>
+  </data>
+  <data name="SelectSizeLabel" xml:space="preserve">
+    <value>Zgjidh masën</value>
+  </data>
+  <data name="RegisteredLabel" xml:space="preserve">
+    <value>I Regjistruar</value>
+  </data>
+  <data name="RegistrationDateLabel" xml:space="preserve">
+    <value>Data e Regjistrimit</value>
+  </data>
+  <data name="NoLabel" xml:space="preserve">
+    <value>Jo</value>
+  </data>
+  <data name="YesLabel" xml:space="preserve">
+    <value>Po</value>
+  </data>
+  <data name="AssignedDateLabel" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ValidityLabel" xml:space="preserve">
+    <value>Vlefshmëria</value>
+  </data>
+  <data name="AddressNameLabel" xml:space="preserve">
+    <value>Emri i adresës</value>
+  </data>
+  <data name="DetailLabel" xml:space="preserve">
+    <value>Detaje</value>
+  </data>
+  <data name="ZIPCodeLabel" xml:space="preserve">
+    <value>ZIP (kod postar)</value>
+  </data>
+  <data name="AmountLabel" xml:space="preserve">
+    <value>Totali</value>
+  </data>
+  <data name="CampaignLabel" xml:space="preserve">
+    <value>Fushata</value>
+  </data>
+  <data name="MyOrdersTextLabel" xml:space="preserve">
+    <value>Këtu mund të shikoni Porositë tuaja, dhë të kontrolloni të gjitha detajet duke klikuar në info.
+Te seksioni gjendja mund të kontrolloni herë pas here ecurinë e dergesës së produktit që keni blerë.</value>
+  </data>
+  <data name="StateLabel" xml:space="preserve">
+    <value>Gjëndja</value>
+  </data>
+  <data name="ItemLabel" xml:space="preserve">
+    <value>Artikulli</value>
+  </data>
+  <data name="OrderDateLabel" xml:space="preserve">
+    <value>Data e porosisë</value>
+  </data>
+  <data name="PaymentDataLabel" xml:space="preserve">
+    <value>Info e pagimit</value>
+  </data>
+  <data name="PriceLabel" xml:space="preserve">
+    <value>Cmimi</value>
+  </data>
+  <data name="ShippingCostLabel" xml:space="preserve">
+    <value>Kosto e dërgimit</value>
+  </data>
+  <data name="ShippingEndLabel" xml:space="preserve">
+    <value>Mbërritja e pakos</value>
+  </data>
+  <data name="ShippingStartLabel" xml:space="preserve">
+    <value>Data e dërgimit</value>
+  </data>
+  <data name="SubTotalLabel" xml:space="preserve">
+    <value>Nëntotali</value>
+  </data>
+  <data name="TotalLabel" xml:space="preserve">
+    <value>Totali</value>
+  </data>
+  <data name="AccessTheSiteLabel" xml:space="preserve">
+    <value>Identifikohu ne sit</value>
+  </data>
+  <data name="AlreadyRegisteredMailLabel" xml:space="preserve">
+    <value>Email i regjistruar me pare.</value>
+  </data>
+  <data name="AreYourRegisteredLabel" xml:space="preserve">
+    <value>Je i regjistruar?</value>
+  </data>
+  <data name="ConditionAcceptanceText" xml:space="preserve">
+    <value>Pranoj Kushtet e Përgjithshme të Shitjes të fzone.al.</value>
+  </data>
+  <data name="EnterTheClubLabel" xml:space="preserve">
+    <value>Hyr ne club-in e fzone.al</value>
+  </data>
+  <data name="ErrorVerifiedLabel" xml:space="preserve">
+    <value>U verifikua një problem teknik.</value>
+  </data>
+  <data name="ExclusiveSalesLabel" xml:space="preserve">
+    <value>Përfitoni ulje ekskluzive</value>
+  </data>
+  <data name="NewsletterAcceptanceText" xml:space="preserve">
+    <value>Dëshiroj të informohem nëpërmjet email-it rreth ofertave të markave në fzone.al</value>
+  </data>
+  <data name="NotValidLabel" xml:space="preserve">
+    <value>i pavlefshëm</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Fjalëkalimi</value>
+  </data>
+  <data name="PasswordMismatchLabel" xml:space="preserve">
+    <value>Fjalëkalimet nuk perkojne.</value>
+  </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>Regjistrohu</value>
+  </data>
+  <data name="RepeatPasswordLabel" xml:space="preserve">
+    <value>Përsërit fjalëkalimin</value>
+  </data>
+  <data name="LogoutLabel" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="PleaseAcceptLabel" xml:space="preserve">
+    <value>Ju lutemi të pranoni kushtet e përdorimit përpara se të regjistroheni.</value>
+  </data>
+  <data name="MailMismatchLabel" xml:space="preserve">
+    <value>E-mail nuk perkon</value>
+  </data>
+  <data name="RepeatLabel" xml:space="preserve">
+    <value>Përserite</value>
+  </data>
+  <data name="SaveMailLabel" xml:space="preserve">
+    <value>E-mail u ruajt me sukses</value>
+  </data>
+  <data name="SavePwMsgLabel" xml:space="preserve">
+    <value>Passwordi u ruajt me sukses</value>
+  </data>
+  <data name="AddressLabel" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
+  <data name="CancelLabel" xml:space="preserve">
+    <value>Anulo</value>
+  </data>
+  <data name="CityLabel" xml:space="preserve">
+    <value>Qyteti</value>
+  </data>
+  <data name="LocationLabel" xml:space="preserve">
+    <value>Lokaliteti</value>
+  </data>
+  <data name="NewPassLabel" xml:space="preserve">
+    <value>Fjalëkalimi i ri</value>
+  </data>
+  <data name="OldPassLabel" xml:space="preserve">
+    <value>Fjalëkalimi i vjetër</value>
+  </data>
+  <data name="SaveLabel" xml:space="preserve">
+    <value>Ruaj</value>
+  </data>
+  <data name="TypeLabel" xml:space="preserve">
+    <value>Tipi</value>
+  </data>
+  <data name="FromLabel" xml:space="preserve">
+    <value>nga</value>
+  </data>
+  <data name="MaximumAddressLabel" xml:space="preserve">
+    <value>Nr maksimal i adresave ështe 5.</value>
+  </data>
+  <data name="TillLabel" xml:space="preserve">
+    <value>deri më</value>
+  </data>
+  <data name="NotesLabel" xml:space="preserve">
+    <value>Komente</value>
+  </data>
+  <data name="DeleteAddressQuestion" xml:space="preserve">
+    <value>Jeni i sigurtë per fshirjen e kesaj adrese?</value>
+  </data>
+  <data name="InvoiceLabel" xml:space="preserve">
+    <value>Fatura</value>
+  </data>
+  <data name="MailSeparatorLabel" xml:space="preserve">
+    <value>Mund të vendosni më shumë se një email, duke i ndarë me presje (pa hapësirë).</value>
+  </data>
+  <data name="InviteBody1MailLabel" xml:space="preserve">
+    <value>Shoku yt</value>
+  </data>
+  <data name="InviteBody2MailLabel" xml:space="preserve">
+    <value>të dërgoi nje ftesë për të parë markat më eksluzive në</value>
+  </data>
+  <data name="InviteSubjectMailLabel" xml:space="preserve">
+    <value>ju fton te regjistroheni për të përfituar nga shitjet eksluzive!</value>
+  </data>
+  <data name="EmptyCartLabel" xml:space="preserve">
+    <value>Shporta juaj nuk përmban asnjë produkt.</value>
+  </data>
+  <data name="InsufficientAvailabilityMessage" xml:space="preserve">
+    <value>Disponibiliteti për këtë produkt është i pamjaftueshëm për sasinë e kërkuar. Zgjidhni një sasi më të vogël.</value>
+  </data>
+  <data name="ProductLabel" xml:space="preserve">
+    <value>Produkti</value>
+  </data>
+  <data name="RemoveLabel" xml:space="preserve">
+    <value>Hiqe</value>
+  </data>
+  <data name="RemoveProductQuestion" xml:space="preserve">
+    <value>Doni të hiqni produktin </value>
+  </data>
+  <data name="AtOurOfficeLabel" xml:space="preserve">
+    <value>Pranë zyrave tona</value>
+  </data>
+  <data name="CheckoutLabel" xml:space="preserve">
+    <value>Porosit tani</value>
+  </data>
+  <data name="ConfirmLabel" xml:space="preserve">
+    <value>Konfirmo</value>
+  </data>
+  <data name="MyCartLabel" xml:space="preserve">
+    <value>Shporta ime</value>
+  </data>
+  <data name="SpecifyShippingAddress" xml:space="preserve">
+    <value>Ju lutemi vendosni një adresë te vlefshme për dërgimin</value>
+  </data>
+  <data name="WithCarrierLabel" xml:space="preserve">
+    <value>Korrier</value>
+  </data>
+  <data name="InviteSuccessful" xml:space="preserve">
+    <value>Ftesa u dërgua me sukses. Në momentin e blerjes së parë të të fuarit tuaj, ju do të përfitoni 5 € bonus për blerje në sitin tonë.</value>
+  </data>
+  <data name="EmailNotExisting" xml:space="preserve">
+    <value>Ky e-mail nuk egziston në bazën tonë të të dhënave.</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Vendosni fjalëkalimin tuaj te ri.</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Kam harruar fjalëkalimin</value>
+  </data>
+  <data name="PasswordLinkClick" xml:space="preserve">
+    <value>Klikoni në link-un e mëposhtëm dhe zgjidhni passwordin tuaj të ri.</value>
+  </data>
+  <data name="PasswordLinkSent" xml:space="preserve">
+    <value>Instruksionet u derguan në email-in tuaj.</value>
+  </data>
+  <data name="PasswordMail" xml:space="preserve">
+    <value>Një link me instruksione do të dërgohet në e-mailin tuaj, për të zgjedhur një password të ri.</value>
+  </data>
+  <data name="PasswordMailSubject" xml:space="preserve">
+    <value>Fjalëkalimi i ri - FZone</value>
+  </data>
+  <data name="SendLabel" xml:space="preserve">
+    <value>Dërgo</value>
+  </data>
+  <data name="MissingFields" xml:space="preserve">
+    <value>Disa fusha mungojne.</value>
+  </data>
+  <data name="DataSavedCorrectly" xml:space="preserve">
+    <value>Të dhënat u ruajtën me sukses.</value>
+  </data>
+  <data name="CancelOrderQuestion" xml:space="preserve">
+    <value>Jeni të sigurtë për anullimin e kësaj porosie?</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Identifikimi dështoi. Ju lutemi të provoni përsëri.</value>
+  </data>
+  <data name="MotivationLabel" xml:space="preserve">
+    <value>Motivi</value>
+  </data>
+  <data name="OtherLabel" xml:space="preserve">
+    <value>Tjetër</value>
+  </data>
+  <data name="RequestLabel" xml:space="preserve">
+    <value>Kërkesa</value>
+  </data>
+  <data name="BuyProblemLabel" xml:space="preserve">
+    <value>Probleme gjatë blerjes</value>
+  </data>
+  <data name="PayProblemLabel" xml:space="preserve">
+    <value>Probleme me pagimin</value>
+  </data>
+  <data name="RegProblemLabel" xml:space="preserve">
+    <value>Probleme gjatë regjistrimit</value>
+  </data>
+  <data name="ContactRequestSent" xml:space="preserve">
+    <value>Kërkesa e juaj u dergua. Shërbimi ndaj klientit do t'ju përgjigjet sa më parë kërkeses suaj</value>
+  </data>
+  <data name="EmailAlreadyInvited" xml:space="preserve">
+    <value>Email i ftuar më parë</value>
+  </data>
+  <data name="OnFirstBuy" xml:space="preserve">
+    <value>(ne blerjen e tyre te pare)</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Skadon</value>
+  </data>
+  <data name="ValueLabel" xml:space="preserve">
+    <value>Vlera</value>
+  </data>
+  <data name="CartExpired" xml:space="preserve">
+    <value>Shporta juaj skadoi. Produktet që përmbante u kthyen të disponueshme në vitrinë. Nxitoni për ti porositur sërish.</value>
+  </data>
+  <data name="InformationLabel" xml:space="preserve">
+    <value>Informacion</value>
+  </data>
+  <data name="CancelCartLabel" xml:space="preserve">
+    <value>Anulo shportën</value>
+  </data>
+  <data name="CancelCartQuestion" xml:space="preserve">
+    <value>Jeni të sigurtë për anullimin e shportës suaj?</value>
+  </data>
+  <data name="CartExpiresInLabel" xml:space="preserve">
+    <value>Shporta juaj skadon per</value>
+  </data>
+  <data name="CartExpiringInfo" xml:space="preserve">
+    <value>Per te perfunduar porosine klikoni mbi porosit tani para skadimit te shportes.</value>
+  </data>
+  <data name="MinutesLabel" xml:space="preserve">
+    <value>minuta.</value>
+  </data>
+  <data name="ContinueShoppingLabel" xml:space="preserve">
+    <value>Vazhdo shopping</value>
+  </data>
+  <data name="ActualCampaignsIntroLabel" xml:space="preserve">
+    <value>Markat aktive në FZone në këtë moment</value>
+  </data>
+  <data name="WhatIsFzoneLabel" xml:space="preserve">
+    <value>Fzone është një portal "privat" që ofron shitje online
+të markave të modës më të njohura, me ulje deri në 70%. Bëhu pjesë e club-it tani!</value>
+  </data>
+  <data name="PassingToPaypalLabel" xml:space="preserve">
+    <value>Pagesa juaj po kalon tek PayPal. Ju Lutem prisni...</value>
+  </data>
+  <data name="ErrorInPayPalLabel" xml:space="preserve">
+    <value>U verifikua nje problem ne pagesen tuaj. Stafi yne do te kryeje verifikimet e duhura dhe do t'ju kontaktoje per t'ju informuar.</value>
+  </data>
+  <data name="PayPalThankyouLabel" xml:space="preserve">
+    <value>Faleminderit per pagesen tuaj.</value>
+  </data>
+  <data name="SaveTransactionID" xml:space="preserve">
+    <value>Ruani kodin e transaksionit te veprimit:</value>
+  </data>
+  <data name="PassingToEasypayLabel" xml:space="preserve">
+    <value>Pagesa juaj po kalon tek EasyPay. Ju Lutem prisni...</value>
+  </data>
+  <data name="PaymentProblemLiteral" xml:space="preserve">
+    <value>Pagesa juaj nuk u krye.</value>
+  </data>
+  <data name="AvailableBonusLabel" xml:space="preserve">
+    <value>I disponueshem</value>
+  </data>
+  <data name="ChooseLabel" xml:space="preserve">
+    <value>Zgjidh bonus</value>
+  </data>
+  <data name="ProductExclusivityLabel" xml:space="preserve">
+    <value>Kujdes! Ky cmim është ekskluziv për FZone. Në rast se paraqiteni pa faturen e FZone, dyqani aplikon cmimin e plotë.</value>
+  </data>
+  <data name="ProductPickUpLabel" xml:space="preserve">
+    <value>Ky produkt mund të terhiqet pranë dyqanit të mëposhtëm me faturën e FZone</value>
+  </data>
+</root>

@@ -1,0 +1,249 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FashionZone.FE.SiteMaster"
+    ViewStateMode="Disabled" %>
+
+<%@ Register Src="~/CustomControl/MainMenuItem.ascx" TagPrefix="menu" TagName="item" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="Online Fashion sales in Albania for world renowned brands."/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <title></title>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/css/fzoneIE.css" />
+		
+		<![endif]-->
+    <link href="/css/fzone4.css" rel="stylesheet" type="text/css" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31957354-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div id="Container">
+            <div id="header">
+                <div class="BoxHeader" runat="server" id="headerLoggedIn">
+                    <%--<table class="TableOut">
+                    <tr>
+                        <td>
+                            <asp:Label runat="server" ID="labelThereAre" Text="<%$Resources:Lang, ThereAreNrLabel%>"></asp:Label>
+                        </td>
+                        <td>
+                            <table class="TableIn" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <asp:Label runat="server" ID="lblConnectedUsers" Text="<%$Resources:Lang, ConnectedUsersLabel%>"></asp:Label>
+                        </td>
+                    </tr>
+                </table>--%>
+                    <br />
+                    <div class="Form">
+                        <a href="/personal/invite/">
+                            <asp:Label runat="server" ID="lblInvite" Text="<%$Resources:Lang, InviteLabel%>"></asp:Label>
+                        </a>
+                        <input type="text" width="400" />
+                        <div class="clearer">
+                        </div>
+                        <div class="InviteHeader">
+                            <asp:Label runat="server" ID="lblInviteAndWin" Text="<%$Resources:Lang, InviteAndWinLabel%>"></asp:Label>€
+                        </div>
+                    </div>
+                    <a href="/cart/mycart/">
+                        <div class="carrello">
+                            <div>
+                                <asp:Literal runat="server" ID="litCarrello"></asp:Literal>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="BoxHeaderInfo">
+                        <a href="/personal/info">
+                            <asp:Label runat="server" ID="lblMyAccount" Text="<%$Resources:Lang, MyAccountLabel%>"></asp:Label></a>
+                    </div>
+                    <%--<img src="image/line.jpg" alt="image" />--%>
+                    <div class="BoxHeaderInfo">
+                        <a href="/personal/notification">
+                            <asp:Label runat="server" ID="lblSalesReminder" CssClass="txtUppercase" Text="<%$Resources:Lang, SalesReminderLabel%>"></asp:Label></a>
+                    </div>
+                    <%--<img src="image/line.jpg" alt="image" />--%>
+                    <div class="BoxHeaderInfo">
+                        <a href="/personal/order">
+                            <asp:Label runat="server" ID="lblMyOrders" Text="<%$Resources:Lang, MyOrdersLabel%>"></asp:Label></a>
+                    </div>
+                </div>
+                <!--end BoxHeader-->
+                <a href="/home/" title="Back to home">
+                    <img src="/image/fzone.png" alt="Fzone" /></a>
+            </div>
+            <!--end header-->
+            <div class="OutMainMenu">
+                <div class="MainMenu">
+                    <ul class="LoginBox">
+                        <li style="font-size: 11px; margin-right: 0; text-transform: none;">
+                            <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                                <LoggedInTemplate>
+                                    <a href="/personal/info/" style="font-size: 11px; margin-right: 0; text-transform: none;">
+                                        <asp:LoginName ID="HeadLoginName" runat="server" />
+                                    </a>
+                                    <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="<%$Resources:Lang, LogoutLabel%>"
+                                        LogoutPageUrl="/" OnLoggingOut="loggingOut" />
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </li>
+                    </ul>
+                    <ul class="LangBox">
+                        <li>
+                            <asp:LinkButton runat="server" ID="lnkShqip" OnClick="languageLinkButton_Click" CommandArgument="sq-AL">Shqip</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton runat="server" ID="lnkEnglish" OnClick="languageLinkButton_Click"
+                                CommandArgument="en-US">English</asp:LinkButton></li>
+                    </ul>
+                    <ul class="MainMenu_ul">
+                        <li><a href="/home/" title="Home" class="SFRed">
+                            <asp:Label runat="server" ID="lblHomeMenu" Text="<%$Resources:Lang, HomeMenuLabel%>"></asp:Label></a>
+                        </li>
+                        <li>
+                            <menu:item runat="server" ItemName="<%$Resources:Lang, WomanMenuLabel%>" ID="womanCat" />
+                        </li>
+                        <li>
+                            <menu:item runat="server" ItemName="<%$Resources:Lang, ManMenuLabel%>" ID="manCat" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" LoadScriptsBeforeUI="false"
+                ScriptMode="Release" EnablePartialRendering="true">
+            </ajaxToolkit:ToolkitScriptManager>
+            <div class="Content" runat="server" id="divMainContent">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                <div class="clearer">
+                </div>
+                <div class="FooterSx" runat="server" id="divSxFooter">
+                    <div class="InfoFooter">
+                        <ul>
+                            <li><strong>FZONE.AL</strong></li>
+                            <li><a href="/private/aboutus/" title="About">
+                                <asp:Label runat="server" ID="lblAbout" Text="<%$Resources:Lang, AboutUsLabel%>"></asp:Label></a></li>
+                            <li><a href="#" title="Work with us">
+                                <asp:Label runat="server" ID="lblWorkWithUs" Text="<%$Resources:Lang, WorkWithUsLabel%>"></asp:Label></a></li>
+                            <li><a href="/private/contact/" title="Contact">
+                                <asp:Label runat="server" ID="lblContact" Text="<%$Resources:Lang, ContactLabel%>"></asp:Label></a></li>
+                            <li><a href="/private/privacy/" title="Privacy Statement">
+                                <asp:Label runat="server" ID="lblPrivacyStatement" Text="<%$Resources:Lang, PrivacyStatementLabel%>"></asp:Label></a></li>
+                            <li><a href="/private/terms/" title="Terms of use">
+                                <asp:Label runat="server" ID="lblTermsOfUse" Text="<%$Resources:Lang, TermsOfUseLabel%>"></asp:Label></a></li>
+                        </ul>
+                    </div>
+                    <img src="/image/vlineblack.png" alt="line black" />
+                    <div class="InfoFooter">
+                        <ul>
+                            <li><strong>
+                                <asp:Label runat="server" ID="lblYourUniverse" Text="<%$Resources:Lang, YourUniverseLabel%>"></asp:Label></strong></li>
+                            <li><a href="/personal/info/" title="My account">
+                                <asp:Label runat="server" ID="lblMyAccountFooter" Text="<%$Resources:Lang, MyAccountLowerLabel%>"></asp:Label></a></li>
+                            <li><a href="/personal/order/" title="My orders">
+                                <asp:Label runat="server" ID="lblMyOrdersFooter" Text="<%$Resources:Lang, MyOrdersLowerLabel%>"></asp:Label></a></li>
+                            <li><a href="/personal/friends/" title="My invitees">
+                                <asp:Label runat="server" ID="lblMyInvitees" Text="<%$Resources:Lang, MyInviteesLabel%>"></asp:Label></a></li>
+                            <li><a href="/personal/bonus/" title="My vouchers">
+                                <asp:Label runat="server" ID="lblMyVouchers" Text="<%$Resources:Lang, MyVoucherLabel%>"></asp:Label></a></li>
+                            <li><a href="/personal/info/" title="My info">
+                                <asp:Label runat="server" ID="lblMyInfo" Text="<%$Resources:Lang, MyInfoLabel%>"></asp:Label></a></li>
+                        </ul>
+                    </div>
+                    <img src="/image/vlineblack.png" alt="line black" />
+                    <div class="InfoFooter">
+                        <ul>
+                            <li><strong>
+                                <asp:Label runat="server" ID="lblHelpAndContact" Text="<%$Resources:Lang, HelpAndContactLabel%>"></asp:Label></strong></li>
+                            <li><a href="/private/delivery/" title="Delivery">
+                                <asp:Label runat="server" ID="lblDelivery" Text="<%$Resources:Lang, DeliveryLabel%>"></asp:Label></a></li>
+                            <li><a href="/private/returns/" title="Returns and refunds">
+                                <asp:Label runat="server" ID="lblReturnsAndRefunds" Text="<%$Resources:Lang, ReturnsAndRefundsLabel%>"></asp:Label></a></li>
+                            <%-- <li><a href="#" title="Post sale services">
+                            <asp:Label runat="server" ID="lblPostSaleServices" Text="<%$Resources:Lang, PostSellServicesLabel%>"></asp:Label></a></li>--%>
+                            <li><a href="/private/payment/" title="Payment">
+                                <asp:Label runat="server" ID="lblPayment" Text="<%$Resources:Lang, PaymentLabel%>"></asp:Label></a></li>
+                            <li><a href="/private/security/" title="Security">
+                                <asp:Label runat="server" ID="lblSecurity" Text="<%$Resources:Lang, SecurityLabel%>"></asp:Label></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end footer sx-->
+                <div class="FooterDx">
+                    <div class="FooterDx_Box">
+                        <strong><a href="/private/payment/" style="text-decoration: none;">
+                            <asp:Label runat="server" ID="lblPaymentMethods" Text="<%$Resources:Lang, PaymentMethodsLabel%>"></asp:Label></a></strong>
+                        <div style="text-align: center; width: 355px; margin-left: auto; margin-right: auto;">
+                            <img id="Image-Maps_9201211211231079" src="http://www.fzone.al/image/pagamenti1.png" usemap="#Image-Maps_9201211211231079" border="0" width="355" height="37" alt="" />
+                            <map id="_Image-Maps_9201211211231079" name="Image-Maps_9201211211231079">
+                                <area shape="rect" coords="0,0,233,32" href="http://www.paypal.com" target="_blank" alt="PayPal" title="PayPal" />
+                                <area shape="rect" coords="274,0,350,32" href="http://www.easypay.al" target="_blank" alt="EasyPay" title="EasyPay" />
+                                <area shape="rect" coords="231,0,273,32" href="/private/payment/" target="_blank" alt="Free Shipping" title="Free Shipping" />
+                            </map>
+                        </div>
+                    </div>
+                    <div class="FooterDx_Box2">
+                        <strong>
+                            <asp:Label runat="server" ID="lblFollowUs" Text="<%$Resources:Lang, FollowUsLabel%>"></asp:Label></strong><div
+                                class="clearer">
+                            </div>
+                        <a href="http://www.facebook.com/fzone.al" title="Facebook" target="_blank">
+                            <img src="/image/facebook.png" alt="facebook" /></a> <a href="http://twitter.com/#!/fzone_al" title="Twitter" target="_blank">
+                                <img src="/image/twitter.png" alt="twitter" /></a> <%--<a href="#" title="google+">
+                                <img src="/image/social2.png" alt="social2" /></a> <a href="#" title="Delicius">
+                                    <img src="/image/deli.png" alt="Delicius" /></a>--%>
+                    </div>
+                    <div class="FooterDx_Box3">
+                        <strong>Partner</strong> <a href="http://www.ozone.al" title="Ozone" target="_blank">
+                            <img src="/image/ozoneLogo.png" alt="Ozone" /></a>
+                    </div>
+                </div>
+                <!--end footer dx-->
+            </div>
+            <!--end content-->
+            <div class="Copy">
+                © 2012 - Zone Sh.p.k. Nipt: L21902036G - Rr. e Bogdaneve / Gjon Muzaka, nr 1 (prane njesise bashkiake 10), Tirane, Albania - Tel: 04 45 30 424 - Email: info@fzone.al
+            </div>
+        </div>
+        <!--end CONTAINER-->
+        <asp:ContentPlaceHolder ID="FootContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

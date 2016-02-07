@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Campaigns>
+    <Campaign>
+      <Title>Valentino</Title>
+      <Url>http://www.fzone.al/</Url>
+      <Image>http://www.fzone.al/Public/Images/95ef1adb-d0a2-42e9-82f4-f20a8799df38__valentino_home_newsletter.jpg</Image>
+      <To>29-06-2012 (06:00)</To>
+    </Campaign>
+    <Campaign>
+      <Title>Pepe Jeans</Title>
+      <Url>http://www.fzone.al/campaign/0638daf2264595ad/</Url>
+      <Image>http://www.fzone.al/Public/Images/bb660abc-c7c5-4fbf-8e11-f2ec4620ab97__home_newsletter.jpg</Image>
+      <To>06-07-2012 (06:00)</To>
+    </Campaign>
+    <Campaign>
+      <Title>Pin-Up Stars</Title>
+      <Url>http://www.fzone.al/campaign/32c9de7c7807f6e4/</Url>
+      <Image>http://www.fzone.al/Public/Images/809c38d8-8e9b-46e3-91e6-68c50968b8a5__pinup_stars_home_newsletter.jpg</Image>
+      <To>06-07-2012 (06:00)</To>
+    </Campaign>
+  </Campaigns>
+  <FutureCampaigns>
+    <Campaign>
+      <Title>Gianfranco Ferre</Title>
+      <Url>http://www.fzone.al/</Url>
+      <Image>http://www.fzone.al/Public/Images/bebdd924-7b5b-4e92-a51e-2264ae9d34c0__gf_home_newsletter.jpg</Image>
+      <From>21-06-2012 (07:00)</From>
+      <To>09-07-2012 (06:00)</To>
+    </Campaign>
+  </FutureCampaigns>
+  <UnsubscribeUrl>http://www.fzone.al/unsubscribe</UnsubscribeUrl>
+</Root>

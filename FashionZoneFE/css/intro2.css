@@ -1,0 +1,90 @@
+﻿body 
+{
+    background-image:url('/image/fzone_back.jpg');
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.allContent {
+    align: center;
+    color:#fff;
+    width:410px;
+    height: 385px;
+    position:relative;
+    	left:472px;
+	top:20px;
+}
+
+.content
+{
+    margin-left: auto;
+	margin-right:auto;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+	width:230px;
+	left:20px;
+	top:335px;
+     background-color:White;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.8;
+    color:Black;
+}
+
+.IntroContent
+{
+    
+}
+
+.IntroContent a
+{
+    color:#cc3333;
+    text-decoration: none;
+}
+
+.IntroContent a:hover
+{
+    text-decoration: underline;
+}
+
+.MyButton a
+{
+    color: #fff;
+    text-decoration:none;
+    height: 15px;
+    width:80px;
+    background-image: url('../image/red.jpg');
+    background-repeat: repeat-x;
+    padding: 5px;
+    text-align: center;
+    margin: 0.5em 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+
+.CampEle {
+    width: 120px;
+    float: left;
+    font-weight: bold;
+    height: 52px;
+    margin-right: 3em;
+    margin-bottom: 2em;
+    box-shadow: 10px 4px 10px #cecece;
+}
+
+.Dx {
+    /*margin-top:1em;*/
+    width: 470px;
+    padding: 0 1em;
+    height: auto;
+
+        position:relative;
+    	left:650px;
+    color:#cc3333;
+}
+
+

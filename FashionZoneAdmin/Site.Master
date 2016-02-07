@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FashionZone.Admin.SiteMaster" ViewStateMode="Disabled"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>FashionZone</title>
+    <link rel="stylesheet" type="text/css" href="Styles/theme4.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico"/>
+
+    <!--[if IE]>
+<link rel="stylesheet" type="text/css" href="Styles/ie-sucks.css" />
+<![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" autocomplete="off">
+    <asp:SiteMapDataSource ID="siteMapDS" runat="server" />
+    <div id="container">
+        <div id="header">
+            <h2>
+                FashionZone Admin area
+            </h2>
+            <div id="topmenu">
+                <asp:Menu ID="Menu2" runat="server" DataSourceID="siteMapDS" StaticDisplayLevels="2"
+                    Orientation="Horizontal" MaximumDynamicDisplayLevels="5" StaticMenuItemStyle-CssClass="topMenuParentItem"
+                    StaticSelectedStyle-BackColor="White" EnableTheming="True">
+                    <DynamicHoverStyle Font-Bold="True" Font-Underline="False" ForeColor="Black" />
+                    <DynamicMenuItemStyle HorizontalPadding="20px" ItemSpacing="20px" />
+                    <DynamicMenuStyle BackColor="White" BorderStyle="Double" />
+                    <DynamicSelectedStyle BackColor="White" ForeColor="Black" />
+                    <StaticHoverStyle ForeColor="#FFCC00" />
+                    <StaticMenuItemStyle BorderStyle="Double" CssClass="topMenuParentItem" Font-Bold="True"
+                        Font-Italic="False" />
+                    <StaticSelectedStyle BackColor="White" />
+                </asp:Menu>
+            </div>
+        </div>
+        <div id="top-panel">
+            <div id="panel">
+                <ul>
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                        <CurrentNodeStyle Font-Bold="False" Font-Underline="True" />
+                        <RootNodeStyle Font-Bold="True" Font-Italic="False" />
+                    </asp:SiteMapPath>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" LoadScriptsBeforeUI="false" ScriptMode="Release" EnablePartialRendering="true">
+                </ajaxToolkit:ToolkitScriptManager>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div id="sidebar">
+                <asp:Menu ID="mainMenu" runat="server" DataSourceID="siteMapDS" EnableTheming="false"
+                    StaticDisplayLevels="5" StaticSelectedStyle-Font-Underline="true">
+                    <LevelMenuItemStyles>
+                        <asp:MenuItemStyle />
+                    </LevelMenuItemStyles>
+                    <LevelMenuItemStyles>
+                        <asp:MenuItemStyle CssClass="mainMenuItem" Font-Bold="true" BackColor="#d9eaed" />
+                    </LevelMenuItemStyles>
+                    <LevelMenuItemStyles>
+                        <asp:MenuItemStyle CssClass="menuItem" />
+                    </LevelMenuItemStyles>
+                </asp:Menu>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="credits">
+                FashionZone© 2011 created by ZoneLab
+            </div>
+            <div id="styleswitcher">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                        ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>! [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/" />
+                        |
+                        <asp:LinkButton ID="btnChangePassword" runat="server" PostBackUrl="~/Account/ChangePassword.aspx"
+                            Text="Password"></asp:LinkButton>
+                        ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <br />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

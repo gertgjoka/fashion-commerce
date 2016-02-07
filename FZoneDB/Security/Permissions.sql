@@ -1,0 +1,28 @@
+﻿GRANT ALTER ANY APPLICATION ROLE TO [privalb]
+    AS [dbo];
+
+
+GO
+GRANT ALTER ANY DATABASE AUDIT TO [privalb]
+    AS [dbo];
+
+
+GO
+GRANT ALTER ANY DATABASE EVENT NOTIFICATION TO [privalb]
+    AS [dbo];
+
+
+GO
+GRANT ALTER ANY CONTRACT TO [privalb]
+    AS [dbo];
+
+
+GO
+GRANT ALTER ANY DATABASE DDL TRIGGER TO [privalb]
+    AS [dbo];
+
+
+GO
+GRANT CONNECT TO [privalb]
+    AS [dbo];
+

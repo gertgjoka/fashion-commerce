@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[PROD_IMAGES] (
+    [ID]         INT            IDENTITY (1, 1) NOT NULL,
+    [ProductID]  INT            NOT NULL,
+    [Image]      NVARCHAR (150) NULL,
+    [Thumbnail]  NVARCHAR (150) NULL,
+    [Principal]  BIT            NULL,
+    [LargeImage] NVARCHAR (150) NULL,
+    CONSTRAINT [PK_PROD_IMAGES_1] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_PROD_IMAGES_PRODUCT] FOREIGN KEY ([ProductID]) REFERENCES [dbo].[PRODUCT] ([ID]) ON DELETE CASCADE ON UPDATE CASCADE
+);
+

@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutUsLabel" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="AccessSaleLabel" xml:space="preserve">
+    <value>Access this sale</value>
+  </data>
+  <data name="ActualCampaignsLabel" xml:space="preserve">
+    <value>Campaigns in this moment</value>
+  </data>
+  <data name="AllMenuLabel" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="CampaignSoonLabel" xml:space="preserve">
+    <value>Soon</value>
+  </data>
+  <data name="ChildMenuLabel" xml:space="preserve">
+    <value>CHILD</value>
+  </data>
+  <data name="ConnectedUsersLabel" xml:space="preserve">
+    <value>online users</value>
+  </data>
+  <data name="ContactLabel" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="DeliveryLabel" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="FollowUsLabel" xml:space="preserve">
+    <value>Follow us</value>
+  </data>
+  <data name="FZONEALLabel" xml:space="preserve">
+    <value>FZONE.AL</value>
+  </data>
+  <data name="HelpAndContactLabel" xml:space="preserve">
+    <value>HELP</value>
+  </data>
+  <data name="HomeMenuLabel" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="InviteAndWinLabel" xml:space="preserve">
+    <value>Invite your friends and win 5 </value>
+  </data>
+  <data name="InviteLabel" xml:space="preserve">
+    <value>INVITE</value>
+  </data>
+  <data name="LoginLabel" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ManMenuLabel" xml:space="preserve">
+    <value>MAN</value>
+  </data>
+  <data name="MoreLabel" xml:space="preserve">
+    <value>MORE</value>
+  </data>
+  <data name="MyAccountLabel" xml:space="preserve">
+    <value>MY ACCOUNT</value>
+  </data>
+  <data name="MyAddressesLabel" xml:space="preserve">
+    <value>My addresses</value>
+  </data>
+  <data name="MyInfoLabel" xml:space="preserve">
+    <value>My information</value>
+  </data>
+  <data name="MyInviteesLabel" xml:space="preserve">
+    <value>My guests</value>
+  </data>
+  <data name="MyOrdersLabel" xml:space="preserve">
+    <value>MY ORDERS</value>
+  </data>
+  <data name="MyVoucherLabel" xml:space="preserve">
+    <value>My vouchers</value>
+  </data>
+  <data name="PaymentLabel" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PaymentMethodsLabel" xml:space="preserve">
+    <value>Payment methods</value>
+  </data>
+  <data name="PostSellServicesLabel" xml:space="preserve">
+    <value>Post sale services</value>
+  </data>
+  <data name="PrivacyStatementLabel" xml:space="preserve">
+    <value>Privacy statement</value>
+  </data>
+  <data name="ReturnsAndRefundsLabel" xml:space="preserve">
+    <value>Returns and Refunds</value>
+  </data>
+  <data name="SalesReminderLabel" xml:space="preserve">
+    <value>Sales memo</value>
+  </data>
+  <data name="SecurityLabel" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="SellingTerms" xml:space="preserve">
+    <value>Selling terms</value>
+  </data>
+  <data name="TermsOfUseLabel" xml:space="preserve">
+    <value>Terms of use</value>
+  </data>
+  <data name="ThereAreNrLabel" xml:space="preserve">
+    <value>There are nr</value>
+  </data>
+  <data name="WomanMenuLabel" xml:space="preserve">
+    <value>WOMAN</value>
+  </data>
+  <data name="WorkWithUsLabel" xml:space="preserve">
+    <value>Work with us</value>
+  </data>
+  <data name="YourUniverseLabel" xml:space="preserve">
+    <value>YOUR UNIVERSE</value>
+  </data>
+  <data name="MyAccountLowerLabel" xml:space="preserve">
+    <value>My account</value>
+  </data>
+  <data name="MyOrdersLowerLabel" xml:space="preserve">
+    <value>My orders</value>
+  </data>
+  <data name="AvailableLabel" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="TerminatedLabel" xml:space="preserve">
+    <value>Terminated</value>
+  </data>
+  <data name="GoToProductDetailLabel" xml:space="preserve">
+    <value>Go to detail</value>
+  </data>
+  <data name="AddToBasketLink" xml:space="preserve">
+    <value>Add to basket</value>
+  </data>
+  <data name="DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EstimatedDeliveryLabel" xml:space="preserve">
+    <value>Estimated delivery:</value>
+  </data>
+  <data name="BirthdayLabel" xml:space="preserve">
+    <value>Birthdate</value>
+  </data>
+  <data name="BonusLabel" xml:space="preserve">
+    <value>Bonus</value>
+  </data>
+  <data name="FriendsLabel" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="GenderLabel" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="MobileLabel" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NotificationHeadLabel" xml:space="preserve">
+    <value>Newsletters</value>
+  </data>
+  <data name="NotifTextDailyLabel" xml:space="preserve">
+    <value>Activate daily newsletters</value>
+  </data>
+  <data name="NotifTextSpecialLabel" xml:space="preserve">
+    <value>Activate newsletters for SPECIAL offfers.</value>
+  </data>
+  <data name="NotifTextWeeklyLabel" xml:space="preserve">
+    <value>Activate weekly newsletters</value>
+  </data>
+  <data name="OrderLabel" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="PersonalDataLabel" xml:space="preserve">
+    <value>Personal Data</value>
+  </data>
+  <data name="SurnameLabel" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="TelLabel" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="InformationsHeadLabel" xml:space="preserve">
+    <value>Informations</value>
+  </data>
+  <data name="InformationsTextLabel" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+  <data name="MyAddresesHeadLabel" xml:space="preserve">
+    <value>My Addreses</value>
+  </data>
+  <data name="PersonalDataHeadLabel" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="SecureTransactionsLabel" xml:space="preserve">
+    <value>Secure transactions payments</value>
+  </data>
+  <data name="SecureTransactionsTextLabel" xml:space="preserve">
+    <value>Faqja fzone.al është e pajisur me një sistem mbrojtje nga më efektivët që ekzistojnë aktualisht. Faqja e internetit nuk ka miratuar vetëm procedurën e kodimit SSL (Secure Socket Layer), por në të njëjtën kohë ka përforcuar procedurat për anti-interferencat dhe kodifikimin për të ruajtur sa më tepër të jetë e mundur të dhënat e lidhura me mjetet e pagesës. Fzone.al nuk ka akses në të dhënat konfidenciale në lidhje me mjetet e pagesës. Në fakt, vetëm Paypal / Easypay ka informacion (për numrin e kartës së kreditit dhe vlefshmërinë), i cili nuk është në dispozicion të palëve të treta.</value>
+  </data>
+  <data name="CompanyLabel" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="EditButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="StreetLabel" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="SizeLabel" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="QuantityLabel" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="AddAddressLabel" xml:space="preserve">
+    <value>Add address</value>
+  </data>
+  <data name="DeleteLabel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeliveryAddressLabel" xml:space="preserve">
+    <value>Delivery Address</value>
+  </data>
+  <data name="OnlyLabel" xml:space="preserve">
+    <value>Only</value>
+  </data>
+  <data name="ProductNotAvailableLiteral" xml:space="preserve">
+    <value>Unfortunately, this product is no longer available.</value>
+  </data>
+  <data name="SelectSizeLabel" xml:space="preserve">
+    <value>Choose size</value>
+  </data>
+  <data name="RegisteredLabel" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="RegistrationDateLabel" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="AssignedDateLabel" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="NoLabel" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ValidityLabel" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="YesLabel" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="AddressNameLabel" xml:space="preserve">
+    <value>Address Name</value>
+  </data>
+  <data name="DetailLabel" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ZIPCodeLabel" xml:space="preserve">
+    <value>ZIP (post code)</value>
+  </data>
+  <data name="AmountLabel" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="CampaignLabel" xml:space="preserve">
+    <value>Campaign</value>
+  </data>
+  <data name="MyOrdersTextLabel" xml:space="preserve">
+    <value>Here you can view your orders, and check all the details by clicking on the info.
+You can check the progress of the shipment of the products in the status section of the order.</value>
+  </data>
+  <data name="StateLabel" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ItemLabel" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="OrderDateLabel" xml:space="preserve">
+    <value>Order data</value>
+  </data>
+  <data name="PaymentDataLabel" xml:space="preserve">
+    <value>Payment info</value>
+  </data>
+  <data name="PriceLabel" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="ShippingCostLabel" xml:space="preserve">
+    <value>Shipping cost</value>
+  </data>
+  <data name="ShippingEndLabel" xml:space="preserve">
+    <value>Receiving date</value>
+  </data>
+  <data name="ShippingStartLabel" xml:space="preserve">
+    <value>Shipping date</value>
+  </data>
+  <data name="SubTotalLabel" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="TotalLabel" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="AccessTheSiteLabel" xml:space="preserve">
+    <value>Access the site</value>
+  </data>
+  <data name="AlreadyRegisteredMailLabel" xml:space="preserve">
+    <value>Email already registered.</value>
+  </data>
+  <data name="AreYourRegisteredLabel" xml:space="preserve">
+    <value>Already a member?</value>
+  </data>
+  <data name="ConditionAcceptanceText" xml:space="preserve">
+    <value>By checking this box I agree to the General Terms of Use of fzone.al.</value>
+  </data>
+  <data name="EnterTheClubLabel" xml:space="preserve">
+    <value>Enter fzone.al club</value>
+  </data>
+  <data name="ErrorVerifiedLabel" xml:space="preserve">
+    <value>Technical error verified.</value>
+  </data>
+  <data name="ExclusiveSalesLabel" xml:space="preserve">
+    <value>Take advantage of the exclusive sales</value>
+  </data>
+  <data name="NewsletterAcceptanceText" xml:space="preserve">
+    <value>I want to receive by email newsletters regarding offers of brands in fzone.al.</value>
+  </data>
+  <data name="NotValidLabel" xml:space="preserve">
+    <value>not valid</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordMismatchLabel" xml:space="preserve">
+    <value>Password mismatch.</value>
+  </data>
+  <data name="RegisterLabel" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RepeatPasswordLabel" xml:space="preserve">
+    <value>Repeat password</value>
+  </data>
+  <data name="LogoutLabel" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="PleaseAcceptLabel" xml:space="preserve">
+    <value>Please accept the General Terms to continue.</value>
+  </data>
+  <data name="MailMismatchLabel" xml:space="preserve">
+    <value>E-mail mismatch</value>
+  </data>
+  <data name="RepeatLabel" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="SaveMailLabel" xml:space="preserve">
+    <value>Change e-mail successful</value>
+  </data>
+  <data name="SavePwMsgLabel" xml:space="preserve">
+    <value>Change password successful</value>
+  </data>
+  <data name="AddressLabel" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CancelLabel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CityLabel" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="LocationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="NewPassLabel" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="OldPassLabel" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="SaveLabel" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="TypeLabel" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="FromLabel" xml:space="preserve">
+    <value>from</value>
+  </data>
+  <data name="MaximumAddressLabel" xml:space="preserve">
+    <value>A maximum of 5 addresses is allowed.</value>
+  </data>
+  <data name="TillLabel" xml:space="preserve">
+    <value>till</value>
+  </data>
+  <data name="NotesLabel" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="DeleteAddressQuestion" xml:space="preserve">
+    <value>Are you sure about deleting this address?</value>
+  </data>
+  <data name="InvoiceLabel" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="MailSeparatorLabel" xml:space="preserve">
+    <value>You can invite more than one email, by separating them with a comma (without space).</value>
+  </data>
+  <data name="InviteBody1MailLabel" xml:space="preserve">
+    <value>your friend</value>
+  </data>
+  <data name="InviteBody2MailLabel" xml:space="preserve">
+    <value>sent an invitation to see the exclusive offers on this site</value>
+  </data>
+  <data name="InviteSubjectMailLabel" xml:space="preserve">
+    <value>invites you to register for best brands sales</value>
+  </data>
+  <data name="EmptyCartLabel" xml:space="preserve">
+    <value>Your cart doesn't contain any product.</value>
+  </data>
+  <data name="InsufficientAvailabilityMessage" xml:space="preserve">
+    <value>Product availability is insufficient for the required quantity. Choose a smaller quantity.</value>
+  </data>
+  <data name="ProductLabel" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="RemoveLabel" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="RemoveProductQuestion" xml:space="preserve">
+    <value>Remove product</value>
+  </data>
+  <data name="AtOurOfficeLabel" xml:space="preserve">
+    <value>At our offices</value>
+  </data>
+  <data name="CheckoutLabel" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="ConfirmLabel" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="MyCartLabel" xml:space="preserve">
+    <value>My cart</value>
+  </data>
+  <data name="SpecifyShippingAddress" xml:space="preserve">
+    <value>Please specify a valid address for shipping.</value>
+  </data>
+  <data name="WithCarrierLabel" xml:space="preserve">
+    <value>Carrier</value>
+  </data>
+  <data name="InviteSuccessful" xml:space="preserve">
+    <value>Invite was successfully sent. You will gain 5 €, when the invited user will place his first order, to use on our site.</value>
+  </data>
+  <data name="EmailNotExisting" xml:space="preserve">
+    <value>This email doesn't exist on our database.</value>
+  </data>
+  <data name="EnterNewPassword" xml:space="preserve">
+    <value>Vendosni fjalëkalimin tuaj te ri.</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="PasswordLinkClick" xml:space="preserve">
+    <value>Click on the link to choose your new password</value>
+  </data>
+  <data name="PasswordLinkSent" xml:space="preserve">
+    <value>The link has been sent to your email.</value>
+  </data>
+  <data name="PasswordMail" xml:space="preserve">
+    <value>A link to reset your password will be sent to your email.</value>
+  </data>
+  <data name="PasswordMailSubject" xml:space="preserve">
+    <value>New password - FZone</value>
+  </data>
+  <data name="SendLabel" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="MissingFields" xml:space="preserve">
+    <value>Some required fields are missing.</value>
+  </data>
+  <data name="DataSavedCorrectly" xml:space="preserve">
+    <value>Data saved correctly.</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Your login attempt was not successful. Please try again.</value>
+  </data>
+  <data name="BuyProblemLabel" xml:space="preserve">
+    <value>Buy problem</value>
+  </data>
+  <data name="MotivationLabel" xml:space="preserve">
+    <value>Motivation</value>
+  </data>
+  <data name="OtherLabel" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="PayProblemLabel" xml:space="preserve">
+    <value>Payment problem</value>
+  </data>
+  <data name="RegProblemLabel" xml:space="preserve">
+    <value>Registration problem</value>
+  </data>
+  <data name="RequestLabel" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="ContactRequestSent" xml:space="preserve">
+    <value>Your request has been sent. Customer care service will handle your request as soon as possible</value>
+  </data>
+  <data name="EmailAlreadyInvited" xml:space="preserve">
+    <value>Email already invited.</value>
+  </data>
+  <data name="ExpirationDate" xml:space="preserve">
+    <value>Expiration</value>
+  </data>
+  <data name="ValueLabel" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="CartExpired" xml:space="preserve">
+    <value>Your cart has expired. The products which it contained were returned back in the showcase. Hurry up to order them again.</value>
+  </data>
+  <data name="InformationLabel" xml:space="preserve">
+    <value>Informacion</value>
+  </data>
+  <data name="CancelCartLabel" xml:space="preserve">
+    <value>Cancel cart</value>
+  </data>
+  <data name="CancelCartQuestion" xml:space="preserve">
+    <value>Are you sure about canceling your shopping cart?</value>
+  </data>
+  <data name="CancelOrderQuestion" xml:space="preserve">
+    <value>Are you sure about canceling this order?</value>
+  </data>
+  <data name="CartExpiresInLabel" xml:space="preserve">
+    <value>The cart expires in </value>
+  </data>
+  <data name="CartExpiringInfo" xml:space="preserve">
+    <value>To complete dhe order click the Checkout button before cart expiration.</value>
+  </data>
+  <data name="MinutesLabel" xml:space="preserve">
+    <value>minutes.</value>
+  </data>
+  <data name="ContinueShoppingLabel" xml:space="preserve">
+    <value>Continue shopping</value>
+  </data>
+  <data name="ActualCampaignsIntroLabel" xml:space="preserve">
+    <value>Brands actually active in FZone</value>
+  </data>
+  <data name="WhatIsFzoneLabel" xml:space="preserve">
+    <value>Fzone is a private portal, that offers online shopping of the most renowned fashion brands with discounts up to 70%. Become part of the club now!</value>
+  </data>
+  <data name="PassingToPaypalLabel" xml:space="preserve">
+    <value>Your payment is passing to PayPal. Please wait...</value>
+  </data>
+  <data name="ErrorInPayPalLabel" xml:space="preserve">
+    <value>A tecnical problem has been verified with your payment. Our staff will make some verifications and will contact to inform you.</value>
+  </data>
+  <data name="PayPalThankyouLabel" xml:space="preserve">
+    <value>Thank you for your payment</value>
+  </data>
+  <data name="SaveTransactionID" xml:space="preserve">
+    <value>Save operation transaction code:</value>
+  </data>
+  <data name="PassingToEasypayLabel" xml:space="preserve">
+    <value>Your payment is passing to EasyPay. Please wait...</value>
+  </data>
+  <data name="PaymentProblemLiteral" xml:space="preserve">
+    <value>Your payment was not successful.</value>
+  </data>
+  <data name="AvailableBonusLabel" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="ChooseLabel" xml:space="preserve">
+    <value>Choose bonus</value>
+  </data>
+  <data name="ProductExclusivityLabel" xml:space="preserve">
+    <value>Attention! This price is exclusive through FZone. In case you don't have FZone's invoice the store will apply the full price.</value>
+  </data>
+  <data name="ProductPickUpLabel" xml:space="preserve">
+    <value>You can pick-up this product at the following shop address by showing your FZone invoice</value>
+  </data>
+</root>

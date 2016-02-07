@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[RETURN_DETAILS] (
+    [ID]            INT            IDENTITY (1, 1) NOT NULL,
+    [ReturnID]      INT            NULL,
+    [OrderDetailID] INT            NULL,
+    [Quantity]      INT            NULL,
+    [Price]         DECIMAL (6, 2) NULL,
+    [MotivationID]  INT            NOT NULL,
+    CONSTRAINT [PK_RETURN_DETAILS] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_RETURN_DETAILS_D_RETURN_MOTIVATION] FOREIGN KEY ([MotivationID]) REFERENCES [dbo].[D_RETURN_MOTIVATION] ([ID]),
+    CONSTRAINT [FK_RETURN_DETAILS_ORDER_DETAIL] FOREIGN KEY ([OrderDetailID]) REFERENCES [dbo].[ORDER_DETAIL] ([ID]),
+    CONSTRAINT [FK_RETURN_DETAILS_RETURN] FOREIGN KEY ([ReturnID]) REFERENCES [dbo].[RETURN] ([ID])
+);
+

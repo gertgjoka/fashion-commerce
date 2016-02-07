@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+    <Customer>
+        <Name>Gerti Gjoka</Name>
+    </Customer>
+    <Invited>e.aliraj@zonegroup.al</Invited>
+    <Bonus>5 €</Bonus>
+    <Url>
+        http://www.fzone.al/
+    </Url>
+    <Campaigns>
+        <Campaign>
+            <Title>Fornarina</Title>
+            <Url>http://www.fzone.al/</Url>
+            <Image>http://www.fzone.al/Public/Images/9267758c-133e-4422-9ba2-57e8fffacdeb__fornarina_home_newsletter.jpg</Image>
+            <To>15-09-2012 (06:00)</To>
+        </Campaign>
+        <Campaign>
+            <Title>Valentino</Title>
+            <Url>http://www.fzone.al/</Url>
+            <Image>http://www.fzone.al/Public/Images/95ef1adb-d0a2-42e9-82f4-f20a8799df38__valentino_home_newsletter.jpg</Image>
+            <To>05-09-2012 (06:00)</To>
+        </Campaign>
+        <Campaign>
+            <Title>Pepe Jeans</Title>
+            <Url>http://www.fzone.al/campaign/0638daf2264595ad/</Url>
+            <Image>http://www.fzone.al/Public/Images/55d559a0-a62b-4ace-bc3a-efa08e509968__re_home_newsletter.jpg</Image>
+            <To>31-08-2012 (06:00)</To>
+        </Campaign>
+        <Campaign>
+            <Title>Pin-Up Stars</Title>
+            <Url>http://www.fzone.al/campaign/32c9de7c7807f6e4/</Url>
+            <Image>http://www.fzone.al/Public/Images/c630f8f7-ae36-40ec-af7c-62990d22ffb8__re_pinup_stars_home_newsletter.jpg</Image>
+            <To>31-08-2012 (06:00)</To>
+        </Campaign>
+    </Campaigns>
+</Root>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A95A1898-6BAF-4E70-A1BA-5411EE0195E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionZone.BL</RootNamespace>
+    <AssemblyName>FashionZone.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.2.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="LinqToExcel, Version=1.7.0.0, Culture=neutral, PublicKeyToken=9c8ea65a58f03f1f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dllExternal\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dllExternal\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Remotion.Data.Linq, Version=1.13.52.2, Culture=neutral, PublicKeyToken=0669cf0452175907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dllExternal\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationContext.cs" />
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="ContextContainer.cs" />
+    <Compile Include="DAO\IAddressInfoDAO.cs" />
+    <Compile Include="DAO\IAttributeDAO.cs" />
+    <Compile Include="DAO\IBonusDAO.cs" />
+    <Compile Include="DAO\ICampaignDAO.cs" />
+    <Compile Include="DAO\ICurrencyDAO.cs" />
+    <Compile Include="DAO\IDAO.cs" />
+    <Compile Include="DAO\IEasyPayPaymentDAO.cs" />
+    <Compile Include="DAO\IInvitationDAO.cs" />
+    <Compile Include="DAO\Impl\AddressInfoDAO.cs" />
+    <Compile Include="DAO\Impl\AttributeDAO.cs" />
+    <Compile Include="DAO\Impl\BonusDAO.cs" />
+    <Compile Include="DAO\Impl\CashPaymentDAO.cs" />
+    <Compile Include="DAO\Impl\CurrencyDAO.cs" />
+    <Compile Include="DAO\Impl\EasyPayPaymentDAO.cs" />
+    <Compile Include="DAO\Impl\InvitationDAO.cs" />
+    <Compile Include="DAO\Impl\PaymentDAO.cs" />
+    <Compile Include="DAO\Impl\PaypalPaymentDAO.cs" />
+    <Compile Include="DAO\Impl\ShoppingCartDAO.cs" />
+    <Compile Include="DAO\ICashPaymentDAO.cs" />
+    <Compile Include="DAO\IPaymentDAO.cs" />
+    <Compile Include="DAO\IPaypalPaymentDAO.cs" />
+    <Compile Include="DAO\IShoppingCartDAO.cs" />
+    <Content Include="DbScripts\MassiveBonus.sql" />
+    <Content Include="DbScripts\ShoppingCartExpiration.sql" />
+    <Content Include="DbScripts\Stock.sql">
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="IContextContainer.cs" />
+    <Compile Include="Manager\BaseManager.cs" />
+    <Compile Include="Manager\IAttributeManager.cs" />
+    <Compile Include="Manager\IBonusManager.cs" />
+    <Compile Include="Manager\IBrandManager.cs" />
+    <Compile Include="Manager\ICampaignManager.cs" />
+    <Compile Include="DAO\ICategoryDAO.cs" />
+    <Compile Include="DAO\ICustomerDAO.cs" />
+    <Compile Include="DAO\IOrderDAO.cs" />
+    <Compile Include="Manager\ICategoryManager.cs" />
+    <Compile Include="Manager\ICustomerManager.cs" />
+    <Compile Include="Manager\IInvitationManager.cs" />
+    <Compile Include="Manager\IManager.cs" />
+    <Compile Include="Manager\Impl\AttributeManager.cs" />
+    <Compile Include="Manager\Impl\BonusManager.cs" />
+    <Compile Include="Manager\Impl\BrandManager.cs" />
+    <Compile Include="Manager\Impl\CategoryManager.cs" />
+    <Compile Include="Manager\Impl\CustomerManager.cs" />
+    <Compile Include="Manager\Impl\InvitationManager.cs" />
+    <Compile Include="Manager\Impl\PaymentManager.cs" />
+    <Compile Include="Manager\Impl\ProductManager.cs" />
+    <Compile Include="Manager\Impl\ReturnManager.cs" />
+    <Compile Include="Manager\Impl\ShoppingCartManager.cs" />
+    <Compile Include="Manager\Impl\UserManager.cs" />
+    <Compile Include="Manager\IOrderManager.cs" />
+    <Compile Include="DAO\IProductDAO.cs" />
+    <Compile Include="DAO\IReturnDAO.cs" />
+    <Compile Include="DAO\IUserDAO.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="ConfigurationKeys.cs" />
+    <Compile Include="DAO\Impl\CustomerDAO.cs" />
+    <Compile Include="DAO\Impl\ReturnDAO.cs" />
+    <Compile Include="DAO\Impl\UserDAO.cs" />
+    <Compile Include="DAO\IBrandDAO.cs" />
+    <Compile Include="IApplicationContext.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="Manager\Impl\CampaignManager.cs" />
+    <Compile Include="Manager\Impl\OrderManager.cs" />
+    <Compile Include="Manager\IPaymentManager.cs" />
+    <Compile Include="Manager\IProductManager.cs" />
+    <Compile Include="Manager\IReturnManager.cs" />
+    <Compile Include="Manager\IShoppingCartManager.cs" />
+    <Compile Include="Manager\IUserManager.cs" />
+    <Compile Include="PDF\PdfGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAO\Impl\BrandDAO.cs" />
+    <Compile Include="DAO\Impl\CampaignDAO.cs" />
+    <Compile Include="DAO\Impl\CategoryDAO.cs" />
+    <Compile Include="DAO\Impl\OrderDAO.cs" />
+    <Compile Include="DAO\Impl\ProductDAO.cs" />
+    <Compile Include="ThreadContextContainer.cs" />
+    <Compile Include="UnityFactory.cs" />
+    <Compile Include="Util\Encryption.cs" />
+    <Compile Include="Util\GenericSorter.cs" />
+    <Compile Include="Util\GraphicsUtil.cs" />
+    <Compile Include="Util\Mailer.cs" />
+    <Compile Include="Util\ProductExcelImporter.cs" />
+    <Compile Include="Util\SortDirection.cs" />
+    <Compile Include="Util\Transfomer.cs" />
+    <Compile Include="Util\UniqueIdGenerator.cs" />
+    <Compile Include="Util\XmlUtil.cs" />
+    <Compile Include="WebContextContainer.cs" />
+    <Compile Include="WebContextModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FashionZoneDL\FashionZoneDL.csproj">
+      <Project>{25B2325C-72EA-47B8-B79E-281AEB5A295C}</Project>
+      <Name>FashionZoneDL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbScripts\CartContent.sql" />
+    <Content Include="DbScripts\DatabaseClean.sql" />
+    <Content Include="DbScripts\DatabaseScript.sql" />
+    <Content Include="DbScripts\DbDataNoDomainScript.sql" />
+    <Content Include="DbScripts\DbDataScript.sql" />
+    <Content Include="DbScripts\DBSchemaScript.sql" />
+    <Content Include="DbScripts\DomainTableScript.sql" />
+    <Content Include="DbScripts\ProductAvailability.sql" />
+    <Content Include="DbScripts\ProductPrices.sql" />
+    <Content Include="DbScripts\TotProductsSold.sql" />
+    <Content Include="dllExternal\itextsharp.dll" />
+    <Content Include="dllExternal\LinqToExcel.dll" />
+    <Content Include="dllExternal\log4net.dll" />
+    <Content Include="dllExternal\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="dllExternal\Microsoft.Practices.Unity.dll" />
+    <Content Include="dllExternal\Remotion.Data.Linq.dll" />
+    <Content Include="Images\LogoHeaderPDF.png" />
+    <Content Include="Templates\Newsletter\Common\Footer.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\Newsletter\Common\Header.xslt" />
+    <Content Include="Templates\Newsletter\Invite.xslt" />
+    <Content Include="Templates\Newsletter\Newsletter.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\Newsletter\Newsletter.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

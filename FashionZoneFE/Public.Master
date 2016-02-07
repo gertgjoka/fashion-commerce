@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.Master.cs" Inherits="FashionZone.FE.PublicMaster"
+    ViewStateMode="Disabled" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="Online Fashion sales in Albania for world renowned brands."/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <title></title>
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="/css/fzoneIE.css" />
+		
+		<![endif]-->
+    <link href="/css/fzone3.css" rel="stylesheet" type="text/css" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31957354-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div id="Container">
+            <div id="header">
+                <a href="/" title="Home">
+                    <img src="/image/fzone.png" alt="Fzone" /></a>
+            </div>
+            <!--end header-->
+            <div class="OutMainMenu">
+                <div class="MainMenu">
+                    <ul class="LoginBox">
+                        <li><a href="/login/" title="Login">
+                            <asp:Label runat="server" ID="lblLogin" Text="<%$Resources:Lang, LoginLabel%>"></asp:Label></a></li>
+                    </ul>
+                    <ul class="LangBox">
+                        <li>
+                            <asp:LinkButton runat="server" ID="lnkShqip" OnClick="languageLinkButton_Click" CommandArgument="sq-AL">Shqip</asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton runat="server" ID="lnkEnglish" OnClick="languageLinkButton_Click"
+                                CommandArgument="en-US">English</asp:LinkButton></li>
+                    </ul>
+                    <ul class="MainMenu_ul">
+                        <li><a href="/register/" title="Home" class="SFRed">
+                            <asp:Label runat="server" ID="lblRegister" Text="<%$Resources:Lang, RegisterLabel%>"></asp:Label></a></li>
+                        <li><a href="/public/aboutus/" title="About Us">
+                            <asp:Label runat="server" ID="Label1" Text="<%$Resources:Lang, AboutUsLabel%>"></asp:Label></a></li>
+                    </ul>
+                </div>
+            </div>
+            <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" LoadScriptsBeforeUI="false"
+                ScriptMode="Release" EnablePartialRendering="true">
+            </ajaxToolkit:ToolkitScriptManager>
+            <div class="Content" runat="server" id="divMainContent">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                <div class="clearer">
+                </div>
+                <div class="FooterSx" runat="server" id="divSxFooter">
+                    <div class="InfoFooter">
+                        <ul>
+                            <li><strong>FZONE.AL</strong></li>
+                            <li><a href="/public/aboutus/" title="About">
+                                <asp:Label runat="server" ID="lblAbout" Text="<%$Resources:Lang, AboutUsLabel%>"></asp:Label></a></li>
+                            <li><a href="#" title="Work with us">
+                                <asp:Label runat="server" ID="lblWorkWithUs" Text="<%$Resources:Lang, WorkWithUsLabel%>"></asp:Label></a></li>
+                            <li><a href="/public/contact/" title="Contact">
+                                <asp:Label runat="server" ID="lblContact" Text="<%$Resources:Lang, ContactLabel%>"></asp:Label></a></li>
+                            <li><a href="/public/privacy/" title="Privacy Statement">
+                                <asp:Label runat="server" ID="lblPrivacyStatement" Text="<%$Resources:Lang, PrivacyStatementLabel%>"></asp:Label></a></li>
+                            <li><a href="/public/terms/" title="Terms of use">
+                                <asp:Label runat="server" ID="lblTermsOfUse" Text="<%$Resources:Lang, TermsOfUseLabel%>"></asp:Label></a></li>
+                        </ul>
+                    </div>
+                    <img src="/image/vlineblack.png" alt="line black" />
+                    <div class="InfoFooter">
+                        <ul>
+                            <li><strong>
+                                <asp:Label runat="server" ID="lblHelpAndContact" Text="<%$Resources:Lang, HelpAndContactLabel%>"></asp:Label></strong></li>
+                            <li><a href="/public/delivery/" title="Delivery">
+                                <asp:Label runat="server" ID="lblDelivery" Text="<%$Resources:Lang, DeliveryLabel%>"></asp:Label></a></li>
+                            <li><a href="/public/returns/" title="Returns and refunds">
+                                <asp:Label runat="server" ID="lblReturnsAndRefunds" Text="<%$Resources:Lang, ReturnsAndRefundsLabel%>"></asp:Label></a></li>
+                            <%-- <li><a href="#" title="Post sale services">
+                            <asp:Label runat="server" ID="lblPostSaleServices" Text="<%$Resources:Lang, PostSellServicesLabel%>"></asp:Label></a></li>--%>
+                            <li><a href="/public/payment/" title="Payment">
+                                <asp:Label runat="server" ID="lblPayment" Text="<%$Resources:Lang, PaymentLabel%>"></asp:Label></a></li>
+                            <li><a href="/public/security/" title="Security">
+                                <asp:Label runat="server" ID="lblSecurity" Text="<%$Resources:Lang, SecurityLabel%>"></asp:Label></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end footer sx-->
+                <div class="FooterDx">
+                    <div class="FooterDx_Box">
+                        <strong><a href="/public/payment/" style="text-decoration: none;">
+                            <asp:Label runat="server" ID="lblPaymentMethods" Text="<%$Resources:Lang, PaymentMethodsLabel%>"></asp:Label></a></strong>
+                        <a href="/public/payment/">
+                            <img id="Img1" runat="server" src="/image/pagamenti1.png" alt="<%$Resources:Lang, PaymentMethodsLabel%>" /></a>
+                    </div>
+                    <div class="FooterDx_Box2">
+                        <strong>
+                            <asp:Label runat="server" ID="lblFollowUs" Text="<%$Resources:Lang, FollowUsLabel%>"></asp:Label></strong><div
+                                class="clearer">
+                            </div>
+                        <a href="http://www.facebook.com/fzone.al" title="Facebook" target="_blank">
+                            <img src="/image/facebook.png" alt="facebook" /></a> <a href="http://twitter.com/#!/fzone_al" title="Twitter">
+                                <img src="/image/twitter.png" alt="twitter" /></a> <%--<a href="#" title="google+">
+                                <img src="/image/social2.png" alt="social2" /></a> <a href="#" title="Delicius">
+                                    <img src="/image/deli.png" alt="Delicius" /></a>--%>
+                    </div>
+                    <div class="FooterDx_Box3">
+                        <strong>Partner</strong> <a href="#" title="Ozone" target="_blank">
+                            <img src="/image/ozoneLogo.png" alt="Ozone" /></a>
+                    </div>
+                </div>
+                <!--end footer dx-->
+            </div>
+            <!--end content-->
+            <div class="Copy">
+                � 2012 - Zone Sh.p.k. Nipt: L21902036G - Rr. e Bogdaneve / Gjon Muzaka, nr 1 (prane njesise bashkiake 10), Tirane, Albania - Tel: 04 45 30 424 - Email: info@fzone.al
+            </div>
+        </div>
+        <!--end CONTAINER-->
+    </form>
+</body>
+</html>

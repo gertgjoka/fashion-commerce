@@ -1,0 +1,809 @@
+﻿/*iframe:layer under window layer*/
+.blueIframeLayer
+{
+	border:0px;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+}
+/*div:Layer contains window*/
+.blueWindowLayer
+{
+	display:none;
+}
+/*Master Table contains window parts*/
+.blueMasterTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+/*td*/
+.blueHeaderContainer
+{
+	height:23px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.blueToolbarContainer
+{
+	height:23px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+}
+/*td*/
+.blueContentContainer
+{
+	width:100%;
+	padding:0px;
+	vertical-align:top;
+}
+/*td*/
+.blueFooterContainer
+{
+	height:18px;
+	width:100%;
+	vertical-align:top;
+	padding:0px;
+
+}
+
+.blueBottomLineContainer
+{
+	height:1px;
+	width:100%;
+	vertical-align:bottom;
+	padding:0px;
+}
+/*Header-----------------------------------------------------------------------------------------------*/
+/*td*/
+.blueHeaderTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+}
+
+/*tr*/
+.blueHeaderTop
+{
+	display:none;
+}
+
+/*tr*/
+.blueHeaderBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.blueHeaderTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueHeaderTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.blueHeaderTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+
+}
+/*td*/
+.blueHeaderMiddleLeft
+{
+	padding:0px;
+	width:5px;
+	height:23px;
+	background-image:url(HeaderMiddleLeft.gif);
+}
+/*td*/
+.blueHeaderMiddleCenter
+{
+	padding:0px;
+	height:23px;	
+	background-image:url(HeaderMiddleCenter.gif);
+	background-repeat:repeat;
+	padding-right:2px;
+}
+/*td*/
+.blueHeaderMiddleRight
+{
+	padding:0px;
+	width:5px;
+	height:23px;
+	background-image:url(HeaderMiddleRight.gif);
+}
+/*td*/
+.blueHeaderBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueHeaderBottomCenter
+{
+	height:0px;	
+	padding:0px;
+}
+/*td*/
+.blueHeaderBottomRight
+{
+	height:0px;
+	width:0px;	
+	padding:0px;
+}
+/*Small table inside header*/
+.blueHeaderInnerTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;	
+}
+/*td*/
+.blueHeaderLogoContainer
+{
+	width:1px;
+	padding:0px;
+	padding-left:5px;
+}
+/*img*/
+.blueHeaderLogo
+{
+	width:10px;
+	height:10px;
+}
+/*td*/
+.blueHeaderTitle
+{
+	padding:0px;
+	padding-left:0px;
+	cursor:default;
+}
+/*div*/
+.blueTitlePanel
+{
+	font-weight:bold;
+	font-family:Tahoma;
+	font-size:11px;
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;		
+}
+/*div*/
+.blueTitlePanelDisable
+{
+	font-weight:bold;
+	font-family:Tahoma;
+	font-size:11px;
+	color:White;
+	overflow:hidden;
+	white-space:nowrap;		
+}
+
+
+/*Contain built-in buttons td*/
+/*td*/
+.blueHeaderBuiltinButtonsContainer
+{
+	width:1px;
+	padding:0px;
+}
+
+
+/*Buttons table*/
+.blueWindowBuiltinButtonsTable
+{
+	width:auto;
+	border-collapse:collapse;
+	margin:0;	
+}
+
+
+/*Individual Button Container, it is the td cover button*/
+.blueButtonContainer
+{
+	padding:1px;
+}
+/*Minimize Button*/
+/*img*/
+.blueButtonMinimizeOver
+{
+	width:10px;
+	height:10px;
+	background:yellow;
+}
+/*img*/
+.blueButtonMinimizeDown
+{
+	width:10px;
+	height:10px;
+	background:red;
+}
+
+
+/*img*/
+.blueButtonMinimizeOut
+{
+	width:10px;
+	height:10px;
+	background:blue;
+}
+
+
+
+
+/*Maximize Button*/
+/*img*/
+.blueButtonMaximizeOver
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOverDown.gif);
+	cursor:pointer;	
+}
+/*img*/
+.blueButtonMaximizeDown
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOverDown.gif);	
+}
+/*img*/
+.blueButtonMaximizeOut
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOut.gif);	
+}
+/*RestoreDown Button*/
+/*img*/
+.blueButtonRestoreDownOver
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOverDown.gif);
+	cursor:pointer;	
+}
+/*img*/
+.blueButtonRestoreDownDown
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOverDown.gif);	
+}
+/*img*/
+.blueButtonRestoreDownOut
+{
+	width:10px;
+	height:10px;
+	background:url(MaximizeOut.gif);	
+}
+
+
+/*Close Button*/
+/*img*/
+.blueButtonCloseOver
+{
+	width:10px;
+	height:10px;
+	background:url(CloseDown.gif);
+	cursor:pointer;	
+}
+/*img*/
+.blueButtonCloseDown
+{
+	width:10px;
+	height:10px;
+	background:url(CloseDown.gif);		
+}
+
+/*img*/
+.blueButtonCloseOut
+{
+	width:10px;
+	height:10px;
+	background:url(CloseOut.gif);		
+}
+
+/*Toolbar-----------------------------------------------------------------------------------------------*/
+.blueToolbarTable
+{
+	width:100%;
+	border-collapse:collapse;
+	margin:0;
+		
+}
+
+/*tr*/
+.blueToolbarTop
+{
+	display:none;
+}
+
+/*tr*/
+.blueToolbarBottom
+{
+	display:none;
+}
+
+
+/*td*/
+.blueToolbarTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarMiddleLeft
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarMiddleCenter
+{
+	padding:0px;
+}
+/*td*/
+.blueToolbarMiddleRight
+{
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarBottomCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.blueToolbarBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*div*/
+.blueToolbarPanel
+{
+	background-color:Aqua;
+}
+
+
+/*Content-----------------------------------------------------------------------------------------------*/
+.blueContentTable
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+	margin:0;
+	
+}
+
+/*tr*/
+.blueContentTop
+{
+	display:none;
+}
+
+/*tr*/
+.blueContentBottom
+{
+	display:none;
+}
+
+
+
+/*td*/
+.blueContentTopLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueContentTopCenter
+{
+	height:0px;
+	padding:0px;
+}
+/*td*/
+.blueContentTopRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueContentMiddleLeft
+{
+	padding:0px;
+	width:1px;
+	background-image:url(Border.gif);
+	background-repeat:repeat;
+}
+/*td*/
+.blueContentMiddleCenter
+{
+	padding:0px;
+	vertical-align:top;
+	
+}
+/*td*/
+.blueContentMiddleRight
+{
+	padding:0px;
+	width:1px;
+	background-image:url(Border.gif);
+	background-repeat:repeat;
+	
+}
+/*td*/
+.blueContentBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.blueContentBottomCenter
+{
+	height:0px;
+	padding:0px;
+	font-size:1px;
+}
+/*td*/
+.blueContentBottomRight
+{
+	height:0%;
+	width:0px;
+	padding:0px;
+	font-size:1px;
+}
+
+/*IFRAME or DIV*/
+.blueContentPanel
+{
+	border:0px;
+	background-color:white;
+	overflow:hidden;
+	padding:0px;	
+}
+
+
+/*Footer-----------------------------------------------------------------------------------------------*/
+.blueFooterTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+
+/*tr*/
+.blueFooterTop
+{
+	display:none;
+}
+
+/*tr*/
+.blueFooterBottom
+{
+	display:none;	
+}
+
+
+/*td*/
+.blueFooterTopLeft 
+{
+	padding:0px;
+}
+/*td*/
+.blueFooterTopCenter
+{
+	padding:0px;
+}
+/*td*/
+.blueFooterTopRight
+{
+	padding:0px;
+}
+/*td*/
+.blueFooterMiddleLeft
+{
+	width:1px;
+	padding:0px;
+	background-image:url(Border.gif);
+	background-repeat:repeat;
+}
+/*td*/
+.blueFooterMiddleCenter
+{
+	height:18px;
+	padding:0px;
+	background-image:url(FooterMiddleCenter.gif);
+	background-repeat:repeat;
+		
+}
+/*td*/
+.blueFooterMiddleRight
+{
+	width:1px;
+	padding:0px;
+	background-image:url(Border.gif);
+	background-repeat:repeat;
+
+}
+/*td*/
+.blueFooterBottomLeft
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+
+}
+/*td*/
+.blueFooterBottomCenter
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+}
+/*td*/
+.blueFooterBottomRight
+{
+	height:0px;
+	width:0px;
+	padding:0px;
+	
+}
+/*div*/
+.blueFooterPanel
+{
+	cursor:default;
+	font-family:Tahoma;
+	font-size:11px;
+	color:#222222;
+	padding-left:5px;
+	overflow:hidden;
+	height:13px;
+	white-space:nowrap;
+}
+/*BottomLine-----------------------------------------------------------------------------------------------*/
+.blueBottomLineTable
+{
+	border-collapse:collapse;
+	margin:0;	
+	width:100%;
+}
+.blueBottomLineLeft
+{
+	width:1px;
+	height:1px;
+	padding:0px;
+	background-image:url(Border.gif);	
+}
+.blueBottomLineCenter
+{
+	height:1px;
+	padding:0px;
+	background-image:url(Border.gif);
+	background-repeat:repeat;
+}
+.blueBottomLineRight
+{
+	width:1px;
+	height:1px;
+	padding:0px;
+	background-image:url(Border.gif);
+}
+
+
+
+/*DragPanel-----------------------------------------------------------------------------------------------*/
+
+.blueDragPanel
+{
+	z-index:999999999;
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;	
+}
+
+/*Filter-----------------------------------------------------------------------------------------------*/
+
+.blueFilterIframeLayer
+{
+	border:0px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;	
+}
+.blueFilterDivLayer
+{
+	background-color:gray;
+	filter:alpha(opacity=15);
+	-moz-opacity:0.15;
+	opacity:0.15;	
+}
+/*Window Resize-----------------------------------------------------------------------------------------------*/
+
+
+.blueResizeHandle
+{
+	position:absolute;
+	background-color:white;
+	filter:alpha(opacity=0);
+	-moz-opacity:0.0;
+	opacity:0.0;
+	font-size:1px;
+	height:4px;
+	width:4px;	
+}
+
+/*Handle cursor of mouseover*/
+.blueCursorResizeLeft
+{	
+	cursor:e-resize;
+}
+.blueCursorResizeTop
+{	
+	cursor:n-resize;
+}
+.blueCursorResizeRight
+{
+	cursor:w-resize;
+}
+
+.blueCursorResizeBottom
+{
+	cursor:s-resize;
+}
+
+.blueCursorResizeTopLeft
+{
+	cursor:nw-resize;	
+}
+
+.blueCursorResizeTopRight
+{
+	cursor:ne-resize;
+}
+
+.blueCursorResizeBottomRight
+{
+	cursor:se-resize;
+}
+
+.blueCursorResizeBottomLeft
+{
+	cursor:sw-resize;
+}
+/*The size of diagonal resize at each conner*/
+.blueResizeConnerSize
+{	
+	width:20px;
+	height:20px;
+	background-color:transparent;			
+}
+
+.blueResizePanel
+{
+	z-index:99999;
+	background-color:Gray;
+	filter:alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;	
+}
+/*--------------------------------------------------------------*/
+
+.blueAlertContentTable
+{
+	width:100%;
+	height:100%;
+}
+
+.blueAlertLogoContainer
+{
+	padding:0px;
+	width:30px;
+	vertical-align:top;
+	padding-top:10px;
+	padding-left:15px;
+}
+.blueAlertMessageContainer
+{
+	padding:0px;
+	font-family:Verdana;
+	font-size:8pt;
+	vertical-align:top;
+	padding-top:15px;
+	padding-left:10px;
+}
+.blueAlertOKContainer
+{
+	padding:0px;
+	text-align:center;
+	vertical-align:bottom;
+	padding-bottom:10px;
+}
+.bluewarningLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-warning.png);
+}
+.blueinfoLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-info.png);
+}
+.blueerrorLogo
+{
+	padding:0px;
+	width:32px;
+	height:32px;
+	background-image:url(windows-error.png);
+}
+
+
+.blueAlertOKButton
+{
+	width:60px;
+}
+
+
+/*use to detect finsihed loading, do not change*/
+.blueEnd
+{
+	background-color:Transparent;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:9px;
+	width:9px;
+	font-size:1px;
+}
+

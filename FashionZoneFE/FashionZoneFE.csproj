@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FF9B58D-89C5-48FF-BC19-C271A88368DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionZone.FE</RootNamespace>
+    <AssemblyName>FashionZone.FE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>5</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dllExternal\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Contract.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Lang.en-US.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Lang.sq-AL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.sq-AL.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="css\fzoneIE.css" />
+    <Content Include="css\intro2.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="CustomControl\BreadCrumb.ascx" />
+    <Content Include="CustomControl\campaignLogosUC.ascx" />
+    <Content Include="CustomControl\CampaignUC.ascx" />
+    <Content Include="CustomControl\cart.ascx" />
+    <Content Include="CustomControl\CategoryMenu.ascx" />
+    <Content Include="CustomControl\CustomerAddress.ascx" />
+    <Content Include="CustomControl\MainMenuItem.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="dllExternal\Facebook.dll" />
+    <Content Include="favicon.ico" />
+    <Content Include="image\background.jpg" />
+    <Content Include="image\Bankat.png" />
+    <Content Include="image\butoni.png" />
+    <Content Include="image\card.png" />
+    <Content Include="image\cards.png" />
+    <Content Include="image\cart.png" />
+    <Content Include="image\Cash.png" />
+    <Content Include="image\Clessidra.png" />
+    <Content Include="image\Credins Bank.png" />
+    <Content Include="image\daily.png" />
+    <Content Include="CustomControl\LeftSidePanelPersInfo.ascx" />
+    <Content Include="CustomControl\ProductUC.ascx" />
+    <Content Include="dllExternal\AjaxControlToolkit.dll" />
+    <Content Include="image\1.png" />
+    <Content Include="image\2.png" />
+    <Content Include="image\3.png" />
+    <Content Include="image\amici.png" />
+    <Content Include="image\arrow.png" />
+    <Content Include="image\blu.png" />
+    <Content Include="image\blutrasp.png" />
+    <Content Include="image\buoni.png" />
+    <Content Include="image\butterfly.png" />
+    <Content Include="image\butterflySmall.png" />
+    <Content Include="image\buy.png" />
+    <Content Include="image\carrello.png" />
+    <Content Include="image\carrellogrey.png" />
+    <Content Include="image\cassa.png" />
+    <Content Include="image\close.png" />
+    <Content Include="image\compaign.jpg" />
+    <Content Include="image\compaignBrand.jpg" />
+    <Content Include="image\compaignBrandSmall.jpg" />
+    <Content Include="image\compaignSmall.jpg" />
+    <Content Include="image\datipersonali.jpg" />
+    <Content Include="image\datipersonali.png" />
+    <Content Include="image\dealImg.jpg" />
+    <Content Include="image\deli.png" />
+    <Content Include="image\easypay.png" />
+    <Content Include="image\facebook.png" />
+    <Content Include="image\faq1.png" />
+    <Content Include="image\faq2.png" />
+    <Content Include="image\faq3.png" />
+    <Content Include="image\faq4.png" />
+    <Content Include="image\faq5.png" />
+    <Content Include="image\faq6.png" />
+    <Content Include="image\fb.png" />
+    <Content Include="image\flag-al.png" />
+    <Content Include="image\flag-en.png" />
+    <Content Include="image\footer.png" />
+    <Content Include="image\fzone.png" />
+    <Content Include="image\fzone_back.jpg" />
+    <Content Include="image\gardenFzone.jpg" />
+    <Content Include="image\grey.png" />
+    <Content Include="image\header.jpg" />
+    <Content Include="image\imgBig.png" />
+    <Content Include="image\imgdeal.png" />
+    <Content Include="image\imgSmall.png" />
+    <Content Include="image\imgSmall2.png" />
+    <Content Include="image\Korrier.png" />
+    <Content Include="image\like.jpg" />
+    <Content Include="image\like.png" />
+    <Content Include="image\line.jpg" />
+    <Content Include="image\linegrey.jpg" />
+    <Content Include="image\linetrasparent.png" />
+    <Content Include="image\linetrasparent200.png" />
+    <Content Include="image\linex.jpg" />
+    <Content Include="image\linexhover.jpg" />
+    <Content Include="image\liney.jpg" />
+    <Content Include="image\list-image.png" />
+    <Content Include="image\loading.gif" />
+    <Content Include="image\lock.png" />
+    <Content Include="image\login.png" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\LogoFZonePayPal.png" />
+    <Content Include="image\LogoHeaderPDF.png" />
+    <Content Include="image\logo_fzone.png" />
+    <Content Include="image\logo_millennium.png" />
+    <Content Include="image\mail.jpg" />
+    <Content Include="image\mipiace.png" />
+    <Content Include="image\modifica.png" />
+    <Content Include="image\more.png" />
+    <Content Include="image\next.png" />
+    <Content Include="image\ozone.jpg" />
+    <Content Include="image\ozoneLogo.png" />
+    <Content Include="image\pagamenti.png" />
+    <Content Include="image\pagamenti1.png" />
+    <Content Include="image\pagamenti200.png" />
+    <Content Include="image\PageseCash.png" />
+    <Content Include="image\Picture-9.png" />
+    <Content Include="image\prev.png" />
+    <Content Include="image\Raiffeisen.png" />
+    <Content Include="image\red.jpg" />
+    <Content Include="image\redsmall.jpg" />
+    <Content Include="image\resi.png" />
+    <Content Include="image\sent.png" />
+    <Content Include="image\sf-bi-trasp.png" />
+    <Content Include="image\sf-BoxHeader.jpg" />
+    <Content Include="image\sf-DealEle.jpg" />
+    <Content Include="image\sf-DealEleHover.jpg" />
+    <Content Include="image\sf-facebook.jpg" />
+    <Content Include="image\sf-footeer.jpg" />
+    <Content Include="image\sf-fzone.gif" />
+    <Content Include="image\sf-fzone.jpg" />
+    <Content Include="image\sf-grey.jpg" />
+    <Content Include="image\sf-imgBig.jpg" />
+    <Content Include="image\sf-imgSmall.jpg" />
+    <Content Include="image\sf.jpg" />
+    <Content Include="image\sf.png" />
+    <Content Include="image\SfMainMenu.jpg" />
+    <Content Include="image\social2.png" />
+    <Content Include="image\special.png" />
+    <Content Include="image\statoOFF - Copia.png" />
+    <Content Include="image\statoOFF.png" />
+    <Content Include="image\statoON.png" />
+    <Content Include="image\tab.png" />
+    <Content Include="image\tabred.png" />
+    <Content Include="image\trasparent.png" />
+    <Content Include="image\trasparentLess.png" />
+    <Content Include="image\tw.png" />
+    <Content Include="image\twitter.png" />
+    <Content Include="image\VISA.png" />
+    <Content Include="image\vline.png" />
+    <Content Include="image\vlineblack.png" />
+    <Content Include="image\weekly.png" />
+    <Content Include="image\x.png" />
+    <Content Include="css\fzone4.css" />
+    <Content Include="IPNHandler.aspx" />
+    <Content Include="js\jquery-1.8.1.min.js" />
+    <Content Include="password.aspx" />
+    <Content Include="Public\aboutUs.aspx" />
+    <Content Include="Public\contactUs.aspx" />
+    <Content Include="Public\delivery.aspx" />
+    <Content Include="Public\payment.aspx" />
+    <Content Include="Public\privacy.aspx" />
+    <Content Include="Public\returns.aspx" />
+    <Content Include="Public\security.aspx" />
+    <Content Include="Public\termsOfUse.aspx" />
+    <Content Include="resetPassword.aspx" />
+    <Content Include="Secure\cart\easyPayReturn.aspx" />
+    <Content Include="Secure\cart\paypalSuccess.aspx" />
+    <Content Include="Secure\home.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="js\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="js\jquery.smooth-scroll.min.js" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="login.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="Secure\campaign.aspx" />
+    <Content Include="Secure\cart\checkout.aspx" />
+    <Content Include="Secure\cart\mycart.aspx" />
+    <Content Include="Secure\Personal\bonus.aspx" />
+    <Content Include="Secure\Personal\friends.aspx" />
+    <Content Include="Secure\Personal\inviteFriend.aspx" />
+    <Content Include="Secure\Personal\notification.aspx" />
+    <Content Include="Secure\Personal\order.aspx" />
+    <Content Include="Secure\Personal\orderDetail.aspx" />
+    <Content Include="Secure\Personal\pdfPrint.aspx" />
+    <Content Include="Secure\Personal\personalInfo.aspx" />
+    <Content Include="Secure\Personal\returns.aspx" />
+    <Content Include="Secure\product.aspx" />
+    <Content Include="static\aboutUs.aspx" />
+    <Content Include="static\contactUs.aspx" />
+    <Content Include="static\delivery.aspx" />
+    <Content Include="static\payment.aspx" />
+    <Content Include="static\privacy.aspx" />
+    <Content Include="static\returns.aspx" />
+    <Content Include="static\security.aspx" />
+    <Content Include="static\termsOfUse.aspx" />
+    <Content Include="Templates\Communications\Bonus.xml" />
+    <Content Include="Templates\Communications\Bonus.xslt" />
+    <Content Include="Templates\Communications\Common\Footer.xslt" />
+    <Content Include="Templates\Communications\Common\Header.xslt" />
+    <Content Include="Templates\Communications\Invite.xslt" />
+    <Content Include="Templates\Communications\Order.xml" />
+    <Content Include="Templates\Communications\Order.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Templates\Communications\Invite.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Lang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.en-US.designer.cs">
+      <DependentUpon>Lang.en-US.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="App_GlobalResources\Lang.sq-AL.designer.cs">
+      <DependentUpon>Lang.sq-AL.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="CustomControl\BreadCrumb.ascx.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\BreadCrumb.ascx.designer.cs">
+      <DependentUpon>BreadCrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\campaignLogosUC.ascx.cs">
+      <DependentUpon>campaignLogosUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\campaignLogosUC.ascx.designer.cs">
+      <DependentUpon>campaignLogosUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\cart.ascx.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\cart.ascx.designer.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\CustomerAddress.ascx.cs">
+      <DependentUpon>CustomerAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CustomerAddress.ascx.designer.cs">
+      <DependentUpon>CustomerAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\MainMenuItem.ascx.cs">
+      <DependentUpon>MainMenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\MainMenuItem.ascx.designer.cs">
+      <DependentUpon>MainMenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPNHandler.aspx.cs">
+      <DependentUpon>IPNHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPNHandler.aspx.designer.cs">
+      <DependentUpon>IPNHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\contactUs.aspx.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\contactUs.aspx.designer.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\delivery.aspx.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\delivery.aspx.designer.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\returns.aspx.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\returns.aspx.designer.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\security.aspx.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\security.aspx.designer.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\termsOfUse.aspx.cs">
+      <DependentUpon>termsOfUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\termsOfUse.aspx.designer.cs">
+      <DependentUpon>termsOfUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetPassword.aspx.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resetPassword.aspx.designer.cs">
+      <DependentUpon>resetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\cart\checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\cart\easyPayReturn.aspx.cs">
+      <DependentUpon>easyPayReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\cart\easyPayReturn.aspx.designer.cs">
+      <DependentUpon>easyPayReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\cart\paypalSuccess.aspx.cs">
+      <DependentUpon>paypalSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\cart\paypalSuccess.aspx.designer.cs">
+      <DependentUpon>paypalSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\inviteFriend.aspx.cs">
+      <DependentUpon>inviteFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\inviteFriend.aspx.designer.cs">
+      <DependentUpon>inviteFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\pdfPrint.aspx.cs">
+      <DependentUpon>pdfPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\pdfPrint.aspx.designer.cs">
+      <DependentUpon>pdfPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\aboutUs.aspx.designer.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\contactUs.aspx.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\contactUs.aspx.designer.cs">
+      <DependentUpon>contactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\delivery.aspx.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\delivery.aspx.designer.cs">
+      <DependentUpon>delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\returns.aspx.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\returns.aspx.designer.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\security.aspx.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\security.aspx.designer.cs">
+      <DependentUpon>security.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="static\termsOfUse.aspx.cs">
+      <DependentUpon>termsOfUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="static\termsOfUse.aspx.designer.cs">
+      <DependentUpon>termsOfUse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CampaignUC.ascx.cs">
+      <DependentUpon>CampaignUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CampaignUC.ascx.designer.cs">
+      <DependentUpon>CampaignUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\CategoryMenu.ascx.cs">
+      <DependentUpon>CategoryMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CategoryMenu.ascx.designer.cs">
+      <DependentUpon>CategoryMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\FZDropDownList.cs" />
+    <Compile Include="CustomControl\LeftSidePanelPersInfo.ascx.cs">
+      <DependentUpon>LeftSidePanelPersInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\LeftSidePanelPersInfo.ascx.designer.cs">
+      <DependentUpon>LeftSidePanelPersInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\ProductUC.ascx.cs">
+      <DependentUpon>ProductUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\ProductUC.ascx.designer.cs">
+      <DependentUpon>ProductUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public.Master.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public.Master.designer.cs">
+      <DependentUpon>Public.Master</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\campaign.aspx.cs">
+      <DependentUpon>campaign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\campaign.aspx.designer.cs">
+      <DependentUpon>campaign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\cart\checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\cart\mycart.aspx.cs">
+      <DependentUpon>mycart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\cart\mycart.aspx.designer.cs">
+      <DependentUpon>mycart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\bonus.aspx.cs">
+      <DependentUpon>bonus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\bonus.aspx.designer.cs">
+      <DependentUpon>bonus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\friends.aspx.cs">
+      <DependentUpon>friends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\friends.aspx.designer.cs">
+      <DependentUpon>friends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\notification.aspx.cs">
+      <DependentUpon>notification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\notification.aspx.designer.cs">
+      <DependentUpon>notification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\order.aspx.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\order.aspx.designer.cs">
+      <DependentUpon>order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\orderDetail.aspx.cs">
+      <DependentUpon>orderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\orderDetail.aspx.designer.cs">
+      <DependentUpon>orderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\personalInfo.aspx.cs">
+      <DependentUpon>personalInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\personalInfo.aspx.designer.cs">
+      <DependentUpon>personalInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Personal\returns.aspx.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Personal\returns.aspx.designer.cs">
+      <DependentUpon>returns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\product.aspx.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\product.aspx.designer.cs">
+      <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\EasyPayData.cs" />
+    <Compile Include="Utils\PDTData.cs" />
+    <Compile Include="Utils\Security\FZMembershipProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FashionZoneBL\FashionZoneBL.csproj">
+      <Project>{A95A1898-6BAF-4E70-A1BA-5411EE0195E5}</Project>
+      <Name>FashionZoneBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionZoneDL\FashionZoneDL.csproj">
+      <Project>{25B2325C-72EA-47B8-B79E-281AEB5A295C}</Project>
+      <Name>FashionZoneDL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Lang.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Lang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Log\" />
+    <Folder Include="PdfDoc\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Public\Images\" />
+    <Folder Include="xml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49769</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49769/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

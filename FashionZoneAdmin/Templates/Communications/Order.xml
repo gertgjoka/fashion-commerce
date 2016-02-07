@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <Products>
+    <Product>
+      <Name>Dolce and Gabbana</Name>
+      <Quantity>2</Quantity>
+      <Image>http://62.149.196.54/public/images/9978a887-766f-465b-8dbd-374e340a452b__DGfinal.jpg</Image>
+      <Price>45,00</Price>
+      <Amount>90</Amount>
+    </Product>
+      <Product>
+        <Name>Dolce and Gabbana</Name>
+        <Quantity>2</Quantity>
+        <Image>http://62.149.196.54/public/images/9978a887-766f-465b-8dbd-374e340a452b__DGfinal.jpg</Image>
+        <Price>45,00</Price>
+        <Amount>90</Amount>
+      </Product>
+  </Products>
+  <Order>
+    <TotalAmount>190</TotalAmount>
+  </Order>
+  <Customer>
+    <Name></Name>
+  </Customer>
+</Root>

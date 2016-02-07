@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26F6CAB4-982D-4AA8-A3DD-A1F6D771CF73}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FashionZone.Admin</RootNamespace>
+    <AssemblyName>FashionZone.Admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="AntiXSSLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SanitizerProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AccessDenied.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="CustomControl\CustomerAddress.ascx" />
+    <Content Include="CustomControl\FZFileUpload.ascx" />
+    <Content Include="CustomControl\OrderDetails.ascx" />
+    <Content Include="CustomControl\ProductImageUpload.ascx" />
+    <Content Include="dllExternal\AjaxControlToolkit.dll" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery-1.8.1.js" />
+    <Content Include="js\jquery-1.8.1.min.js" />
+    <Content Include="Secure\Order\Download.aspx" />
+    <Content Include="ErrorManager.aspx" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg_blue.jpg" />
+    <Content Include="Images\bg_brown.jpg" />
+    <Content Include="Images\bg_light_green.jpg" />
+    <Content Include="Images\bg_menu_blue.jpg" />
+    <Content Include="Images\bg_menu_green.jpg" />
+    <Content Include="Images\bg_menu_mix.jpg" />
+    <Content Include="Images\bg_menu_red.jpg" />
+    <Content Include="Images\bg_mix.jpg" />
+    <Content Include="Images\form_blue.gif" />
+    <Content Include="Images\form_brown.gif" />
+    <Content Include="Images\form_green.gif" />
+    <Content Include="Images\form_mix.gif" />
+    <Content Include="Images\form_red.gif" />
+    <Content Include="Images\graph.jpg" />
+    <Content Include="Images\graph2.jpg" />
+    <Content Include="Images\icons\add.png" />
+    <Content Include="Images\icons\application_add.png" />
+    <Content Include="Images\icons\arrow_down.png" />
+    <Content Include="Images\icons\arrow_down_mini.gif" />
+    <Content Include="Images\icons\arrow_left.gif" />
+    <Content Include="Images\icons\arrow_right.gif" />
+    <Content Include="Images\icons\brick.png" />
+    <Content Include="Images\icons\bricks.png" />
+    <Content Include="Images\icons\bricks_gear.png" />
+    <Content Include="Images\icons\brick_edit.png" />
+    <Content Include="Images\icons\car.png" />
+    <Content Include="Images\icons\cart.png" />
+    <Content Include="Images\icons\cart_add.png" />
+    <Content Include="Images\icons\cog.png" />
+    <Content Include="Images\icons\coins.png" />
+    <Content Include="Images\icons\color_swatch.png" />
+    <Content Include="Images\icons\expand.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Images\icons\feed.png" />
+    <Content Include="Images\icons\folder.png" />
+    <Content Include="Images\icons\folder_page.png" />
+    <Content Include="Images\icons\folder_page_add.png" />
+    <Content Include="Images\icons\folder_table.png" />
+    <Content Include="Images\icons\group.png" />
+    <Content Include="Images\icons\house.png" />
+    <Content Include="Images\icons\magnifier.png" />
+    <Content Include="Images\icons\page_add.png" />
+    <Content Include="Images\icons\page_gear.png" />
+    <Content Include="Images\icons\page_white_delete.png" />
+    <Content Include="Images\icons\page_white_edit.png" />
+    <Content Include="Images\icons\page_white_link.png" />
+    <Content Include="Images\icons\page_white_text_width.png" />
+    <Content Include="Images\icons\report.png" />
+    <Content Include="Images\icons\report_link.png" />
+    <Content Include="Images\icons\rss.png" />
+    <Content Include="Images\icons\user.png" />
+    <Content Include="Images\icons\user_add.png" />
+    <Content Include="Images\icons\user_delete.png" />
+    <Content Include="Images\icons\user_edit.png" />
+    <Content Include="Images\icons\world.png" />
+    <Content Include="Images\LogoHeaderPDF.png" />
+    <Content Include="Images\LogoHeaderPDF_.png" />
+    <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="js\jquery.fileupload.js" />
+    <Content Include="js\jquery.iframe-transport.js" />
+    <Content Include="Secure\Admin\AuditTrail.aspx" />
+    <Content Include="Secure\Admin\Roles.aspx" />
+    <Content Include="Secure\Admin\UserNew.aspx" />
+    <Content Include="Secure\Customer\BonusNew.aspx" />
+    <Content Include="Secure\Customer\BonusView.aspx" />
+    <Content Include="Secure\Customer\CustomerNew.aspx" />
+    <Content Include="Secure\Customer\CustomerView.aspx" />
+    <Content Include="Secure\Customer\InvitationNew.aspx" />
+    <Content Include="Secure\Customer\InvitationView.aspx" />
+    <Content Include="Secure\Order\CartView.aspx" />
+    <Content Include="Secure\Order\InvoiceView.aspx" />
+    <Content Include="Secure\Order\OrderNew.aspx" />
+    <Content Include="Secure\Order\OrderView.aspx" />
+    <Content Include="Secure\Order\ReturnNew.aspx" />
+    <Content Include="Secure\Order\ReturnView.aspx" />
+    <Content Include="Secure\Order\ShipmentView.aspx" />
+    <Content Include="Secure\Product\Attributes.aspx" />
+    <Content Include="Secure\Product\BrandNew.aspx" />
+    <Content Include="Secure\Product\BrandView.aspx" />
+    <Content Include="Secure\Product\CampaignNew.aspx" />
+    <Content Include="Secure\Product\CampaignView.aspx" />
+    <Content Include="Secure\Product\Categories.aspx" />
+    <Content Include="Secure\Product\ProductImporter.aspx" />
+    <Content Include="Secure\Product\ProductNew.aspx" />
+    <Content Include="Secure\Product\ProductView.aspx" />
+    <Content Include="Services\AutoCompleteName.asmx" />
+    <Content Include="Services\PopulateCddlCat.asmx" />
+    <Content Include="Styles\ie-sucks.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\iepngfix.htc" />
+    <Content Include="Styles\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Styles\security.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Styles\switch.css" />
+    <Content Include="Styles\theme.css" />
+    <Content Include="Styles\theme1.css" />
+    <Content Include="Styles\theme2.css" />
+    <Content Include="Styles\theme3.css" />
+    <Content Include="Styles\theme4.css" />
+    <Content Include="Secure\Admin\UserView.aspx" />
+    <Content Include="Styles\wdstyles\blue\blue.css" />
+    <Content Include="Styles\wdstyles\blue\blue.js" />
+    <Content Include="Styles\wdstyles\blue\Border.gif" />
+    <Content Include="Styles\wdstyles\blue\CloseDown.gif" />
+    <Content Include="Styles\wdstyles\blue\CloseOut.gif" />
+    <Content Include="Styles\wdstyles\blue\CloseOverDown.gif" />
+    <Content Include="Styles\wdstyles\blue\FooterMiddleCenter.gif" />
+    <Content Include="Styles\wdstyles\blue\HeaderMiddleCenter.gif" />
+    <Content Include="Styles\wdstyles\blue\HeaderMiddleLeft.gif" />
+    <Content Include="Styles\wdstyles\blue\HeaderMiddleRight.gif" />
+    <Content Include="Styles\wdstyles\blue\HeaderTopLeft.gif" />
+    <Content Include="Styles\wdstyles\blue\MaximizeOut.gif" />
+    <Content Include="Styles\wdstyles\blue\MaximizeOverDown.gif" />
+    <Content Include="Styles\wdstyles\blue\none.gif" />
+    <Content Include="Styles\wdstyles\blue\windows-error.png" />
+    <Content Include="Styles\wdstyles\blue\windows-info.png" />
+    <Content Include="Styles\wdstyles\blue\windows-warning.png" />
+    <Content Include="Templates\Communications\Bonus.xslt" />
+    <Content Include="Templates\Communications\Common\Footer.xslt" />
+    <Content Include="Templates\Communications\Common\Header.xslt" />
+    <Content Include="Templates\Communications\Bonus.xml" />
+    <Content Include="Templates\Communications\Invite.xml" />
+    <Content Include="Templates\Communications\Invite.xslt" />
+    <Content Include="Templates\Communications\Order.xml" />
+    <Content Include="Templates\Communications\Order.xslt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Security.Master.cs">
+      <DependentUpon>Security.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Security.Master.designer.cs">
+      <DependentUpon>Security.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxFileHandler.ashx.cs">
+      <DependentUpon>AjaxFileHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\CustomerAddress.ascx.cs">
+      <DependentUpon>CustomerAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\CustomerAddress.ascx.designer.cs">
+      <DependentUpon>CustomerAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\FZDropDownList.cs" />
+    <Compile Include="CustomControl\FZFileUpload.ascx.cs">
+      <DependentUpon>FZFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\FZFileUpload.ascx.designer.cs">
+      <DependentUpon>FZFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\FZGrid.cs" />
+    <Compile Include="CustomControl\OrderDetails.ascx.cs">
+      <DependentUpon>OrderDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\OrderDetails.ascx.designer.cs">
+      <DependentUpon>OrderDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControl\ProductImageUpload.ascx.cs">
+      <DependentUpon>ProductImageUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomControl\ProductImageUpload.ascx.designer.cs">
+      <DependentUpon>ProductImageUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorManager.aspx.cs">
+      <DependentUpon>ErrorManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorManager.aspx.designer.cs">
+      <DependentUpon>ErrorManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secure\Admin\AuditTrail.aspx.cs">
+      <DependentUpon>AuditTrail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\AuditTrail.aspx.designer.cs">
+      <DependentUpon>AuditTrail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\UserNew.aspx.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\UserNew.aspx.designer.cs">
+      <DependentUpon>UserNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\BonusNew.aspx.cs">
+      <DependentUpon>BonusNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\BonusNew.aspx.designer.cs">
+      <DependentUpon>BonusNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\BonusView.aspx.cs">
+      <DependentUpon>BonusView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\BonusView.aspx.designer.cs">
+      <DependentUpon>BonusView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\CustomerNew.aspx.cs">
+      <DependentUpon>CustomerNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\CustomerNew.aspx.designer.cs">
+      <DependentUpon>CustomerNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\CustomerView.aspx.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\CustomerView.aspx.designer.cs">
+      <DependentUpon>CustomerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\InvitationNew.aspx.cs">
+      <DependentUpon>InvitationNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\InvitationNew.aspx.designer.cs">
+      <DependentUpon>InvitationNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Customer\InvitationView.aspx.cs">
+      <DependentUpon>InvitationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Customer\InvitationView.aspx.designer.cs">
+      <DependentUpon>InvitationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\CartView.aspx.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\CartView.aspx.designer.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\InvoiceView.aspx.cs">
+      <DependentUpon>InvoiceView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\InvoiceView.aspx.designer.cs">
+      <DependentUpon>InvoiceView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\OrderNew.aspx.cs">
+      <DependentUpon>OrderNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\OrderNew.aspx.designer.cs">
+      <DependentUpon>OrderNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\OrderView.aspx.cs">
+      <DependentUpon>OrderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\OrderView.aspx.designer.cs">
+      <DependentUpon>OrderView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\ReturnNew.aspx.cs">
+      <DependentUpon>ReturnNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\ReturnNew.aspx.designer.cs">
+      <DependentUpon>ReturnNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\ReturnView.aspx.cs">
+      <DependentUpon>ReturnView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\ReturnView.aspx.designer.cs">
+      <DependentUpon>ReturnView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Order\ShipmentView.aspx.cs">
+      <DependentUpon>ShipmentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Order\ShipmentView.aspx.designer.cs">
+      <DependentUpon>ShipmentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\Attributes.aspx.cs">
+      <DependentUpon>Attributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\Attributes.aspx.designer.cs">
+      <DependentUpon>Attributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\BrandNew.aspx.cs">
+      <DependentUpon>BrandNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\BrandNew.aspx.designer.cs">
+      <DependentUpon>BrandNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\BrandView.aspx.cs">
+      <DependentUpon>BrandView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\BrandView.aspx.designer.cs">
+      <DependentUpon>BrandView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\CampaignNew.aspx.cs">
+      <DependentUpon>CampaignNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\CampaignNew.aspx.designer.cs">
+      <DependentUpon>CampaignNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\CampaignView.aspx.cs">
+      <DependentUpon>CampaignView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\CampaignView.aspx.designer.cs">
+      <DependentUpon>CampaignView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\ProductImporter.aspx.cs">
+      <DependentUpon>ProductImporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\ProductImporter.aspx.designer.cs">
+      <DependentUpon>ProductImporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\ProductNew.aspx.cs">
+      <DependentUpon>ProductNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\ProductNew.aspx.designer.cs">
+      <DependentUpon>ProductNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Product\ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Product\ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AutoCompleteName.asmx.cs">
+      <DependentUpon>AutoCompleteName.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\PopulateCddlCat.asmx.cs">
+      <DependentUpon>PopulateCddlCat.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FZBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utils\Configuration.cs" />
+    <Compile Include="Utils\Security\FZMembershipProvider.cs" />
+    <Compile Include="Utils\Security\FZRoleProvider.cs" />
+    <Compile Include="Utils\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Docs\" />
+    <Folder Include="PdfDoc\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Public\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FashionZoneBL\FashionZoneBL.csproj">
+      <Project>{A95A1898-6BAF-4E70-A1BA-5411EE0195E5}</Project>
+      <Name>FashionZoneBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FashionZoneDL\FashionZoneDL.csproj">
+      <Project>{25B2325C-72EA-47B8-B79E-281AEB5A295C}</Project>
+      <Name>FashionZoneDL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Security.Master" />
+    <Content Include="AjaxFileHandler.ashx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Styles\wdstyles\blue\Thumbs.db" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2137</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2137/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
