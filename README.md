@@ -1,5 +1,5 @@
-# fashion-commerce
-Full featured ASP.NET/C# multilanguage e-commerce
+# Fashion e-commerce
+Full featured ASP.NET/C# multilanguage e-commerce, created for flash sales business model
 
 Layered ASP.NET e-commerce application written from scratch in C# ASP.NET Web Forms.
 
