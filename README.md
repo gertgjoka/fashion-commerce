@@ -14,6 +14,6 @@ SQL Server 2012
 MS Ajax/jQuery
 XSLT/XML for newsletters
 Unity Container IoC
-PayPayl payment solution
+PayPal payment solution
 Mobile payment solution
 Log4net
